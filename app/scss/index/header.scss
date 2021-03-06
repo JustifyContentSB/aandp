@@ -1,0 +1,13 @@
+.header {
+	background-image: url('../../images/index/header-bg.jpg');
+	min-height: 476px;
+	&::after {
+		display: none;
+	}
+	&__top {
+		padding: 24px 20px 26px;
+	}
+	.main-title {
+		margin-top: 32px;
+	}
+}

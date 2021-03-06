@@ -1,0 +1,25 @@
+.btn {
+	display: block;
+	width: 100%;
+	padding: 11px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 28px;
+	text-align: center;
+	background: $brown;
+	color: #fff;
+	transition: $transition;
+	&:hover,
+	&:focus {
+		background: #6B5C4D;
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.btn {
+		display: inline-block;
+		padding: 15px 30px;
+		width: auto;
+		font-size: 18px;
+	}
+}

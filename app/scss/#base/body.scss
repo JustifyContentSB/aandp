@@ -1,0 +1,17 @@
+html, body {
+	min-width: 320px;
+	// min-height: 100vh;
+	// display: flex;
+	// flex-direction: column;
+	// justify-content: space-between;
+	// overflow-x: hidden;
+	font-family: 'Stem', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 22px;
+	background: #000;
+	color: #fff;
+	.no-scroll {
+		overflow: hidden;
+	}
+}

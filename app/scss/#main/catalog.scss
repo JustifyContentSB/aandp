@@ -1,0 +1,39 @@
+.catalog {
+	margin-top: 30px;
+	font-weight: 300;
+	font-size: 12px;
+	line-height: 18px;
+	&__title {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 21px;
+		letter-spacing: 0.03rem;
+	}
+	&__img {
+		&-dekstop {
+			display: none;
+			img {
+				margin: 0 auto;
+			}
+		}
+		&-tel {
+			margin-top: 15px;
+			img {
+				margin: 0 auto;
+				width: 48%;
+				min-width: 145px;
+				max-width: 170px;
+				height: auto;
+			}
+		}
+	}
+	&__text {
+		margin-top: 7px;
+	}
+	&__btn {
+		margin-top: 17px;
+	}
+	&__descr {
+		display: none;
+	}
+}

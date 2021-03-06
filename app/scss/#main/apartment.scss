@@ -1,0 +1,64 @@
+.apartment {
+	padding-top: 55px;
+	margin-top: -35px;
+	&__btns {
+		position: relative;
+		top: -30px;
+		width: 90px;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		.swiper {
+			&-button {
+				&-prev {
+					position: static;
+				}
+				&-next {
+					position: static;
+				}
+			}
+		}
+	}
+	&__swiper {
+		padding-left: 10px;
+	}
+	&__slide {
+		width: 240px;
+		height: 135px;
+		overflow: hidden;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+		}
+		&-info {
+			padding: 16px 17px;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+		&-type {
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 19px;
+		}
+		&-offer {
+			margin-top: 2px;
+			font-weight: 300;
+			font-size: 12px;
+			line-height: 15px;
+		}
+		&-img {
+			img {
+				height: auto;
+			}
+		}
+	}
+}

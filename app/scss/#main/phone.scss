@@ -1,0 +1,115 @@
+.phone {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 48px;
+	height: 48px;
+	position: fixed;
+	z-index: 50;
+	right: 10px;
+	bottom: 10px;
+	border-radius: 50%;
+	background: #000;
+	border: 1px solid #fff;
+	&__modal {
+		padding: 10px;
+		width: 100%;
+		background: #000;
+		position: fixed;
+		z-index: 300;
+		left: 0;
+		bottom: -110%;
+		transition: $transition;
+		&.active {
+			bottom: 0;
+		}
+		&-link {
+			display: block;
+			min-height: 40px;
+			padding: 13px 10px 13px 47px;
+			margin-bottom: 12px;
+			font-size: 12px;
+			line-height: 15px;
+			letter-spacing: 0.1rem;
+			border: 1px solid #000000;
+			position: relative;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		&-close {
+			width: 55px;
+			height: 43px;
+			background: #000;
+			position: absolute;
+			right: 0;
+			top: -43px;
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				width: 21px;
+				height: 1px;
+				background: #fff; 
+			}
+			&::before {
+				transform: rotate(45deg);
+				left: 18px;
+			}
+			&::after {
+				transform: rotate(-45deg);
+				left: 18px;
+			}
+		}
+		&-phone {
+			color: #fff;
+			background: $brown;
+			border-color: $brown;
+			&::before {
+				content: '';
+				position: absolute;
+				left: 14px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 23px;
+				height: 23px;
+				background: url('../../images/icons/tel.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+		&-mail {
+			border: 1px solid #fff;
+			&::before {
+				content: '';
+				position: absolute;
+				left: 14px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 20px;
+				height: 14px;
+				background: url('../../images/icons/mail.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+		&-whatsapp {
+			border: 1px solid #fff;
+			&::before {
+				content: '';
+				position: absolute;
+				left: 14px;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 19px;
+				height: 19px;
+				background: url('../../images/icons/whatsapp.svg');
+				background-repeat: no-repeat;
+				background-size: contain;
+			}
+		}
+	}
+	@media screen and(min-width: 1366px) {
+		display: none;
+	}
+}

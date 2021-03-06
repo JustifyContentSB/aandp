@@ -1,0 +1,178 @@
+.pro {
+	width: 100%;
+	margin-top: 35px;
+	&__img {
+		max-width: 810px;
+		position: relative;
+		&-dekstop {
+			display: none;
+		}
+		&-name {
+			position: absolute;
+			bottom: 5px;
+			right: 20px;
+			font-weight: 350;
+			font-size: 10px;
+			line-height: 28px;
+			color: #858585;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+	&__info {
+		margin-top: 25px;
+		&-name {
+			display: none;
+		}
+	}
+	&__title {
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 21px;
+	}
+	&__text {
+		margin-top: 15px;
+		font-weight: 300;
+		font-size: 10px;
+		line-height: 13px;
+		letter-spacing: 0.055rem;
+		p {
+			margin-bottom: 14px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+	}
+	&__link {
+		margin-top: 18px;
+		&-dekstop {
+			display: none;
+		}
+	}
+}
+
+@media screen and(min-width: 480px) {
+	.pro {
+		&__img {
+			&-tel {
+				display: none;
+			}
+			&-dekstop {
+				display: block;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.pro {
+		&__title {
+			br {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1280px) {
+	.pro {
+		margin-top: 60px;
+		&__inner {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: flex-start;
+			justify-content: space-between;
+		}
+		&__img {
+			width: 610px;
+		}
+		&__info {
+			margin-top: 0;
+			width: calc(100% - 640px);
+			min-height: 360px;
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+		}	
+		&__text {
+			font-size: 16px;
+			line-height: 130%;
+			p {
+				margin-bottom: 20px;
+			}
+		}
+		&__title {
+			font-size: 30px;
+			line-height: 120%;
+		}
+		&__link {
+			min-width: 380px;
+			margin-top: auto;
+			display: inline-block;
+			width: auto;
+			&-tel {
+				display: none;
+			}
+			&-dekstop {
+				display: inline;
+			}
+		}
+	}		
+}	
+
+@media screen and(min-width: 1366px) {
+	.pro {
+		&__text {
+			margin-top: 25px;
+		}
+		&__img {
+			&-name {
+				display: none;
+			}
+		}
+		&__info {
+			&-name {
+				display: block;
+				color: #858585;
+				letter-spacing: -0.001rem;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1440px) {
+	.pro {
+		margin-top: 100px;
+		&__title {
+			font-size: 45px;
+			line-height: 58px;
+		}
+	}
+}
+
+@media screen and(min-width: 1920px) {
+	.pro {
+		&__img {
+			width: 810px;
+		}
+		&__info {
+			width: calc(100% - 865px);
+			min-height: 491px;
+			margin-top: -10px;
+			&-name {
+				margin-top: 40px;
+			}
+		}
+		&__text {
+			margin-top: 35px;
+			font-size: 18px;
+			line-height: 28px;
+			letter-spacing: 0.025rem;
+			p {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}

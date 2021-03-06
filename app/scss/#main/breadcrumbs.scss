@@ -1,0 +1,51 @@
+.breadcrumbs {
+	width: auto;
+	margin-top: 14px;
+	padding-left: 10px;
+	margin-right: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 300;
+	font-size: 11px;
+	line-height: 12px;
+	overflow-x: scroll;
+	-ms-overflow-style: none;
+	overflow: -moz-scrollbars-none;
+	&::-webkit-scrollbar { 
+		width: 0; 
+		height: 0; 
+	}
+	li {
+		margin-right: 14px;
+		padding-right: 17px;
+		position: relative;
+		&::after {
+			content: url('../../images/icons/arrow-right.svg');
+			position: absolute;
+			top: 0;
+			right: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+			padding-right: 0;
+			&::after {
+				display: none;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.breadcrumbs {
+		margin-top: 30px;
+		font-size: 13px;
+		line-height: 120%;
+	}
+}
+
+@media screen and(min-width: 1280px) {
+	.breadcrumbs {
+		display: none;
+	}
+}

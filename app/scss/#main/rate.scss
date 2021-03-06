@@ -1,0 +1,26 @@
+.rate {
+	display: flex;
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 25px;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgba(255, 255, 255, 0.3);
+	li {
+		margin-right: 15px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+	a {
+		border-bottom: 1px solid transparent;
+		&.active {
+			color: #fff;
+			text-decoration: underline;
+		}
+		&:hover,
+		&:focus {
+			color: #fff;
+		}
+	}
+}
