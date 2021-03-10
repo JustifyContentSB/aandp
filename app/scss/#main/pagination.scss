@@ -1,3 +1,147 @@
-.pagintaion {
-	
+.pagination {
+	margin-top: 30px;
+	&__inner {
+		max-width: 320px;
+		margin: 0 auto;
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	&__prev, 
+	&__next {
+		display: inline-flex;
+		min-width: 36px;
+		height: 36px;
+		border: 1px solid #fff;
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -45%);
+			width: 13px;
+			height: 9px;
+			background-image: url('../../images/icons/pagination-next.svg');
+			background-repeat: no-repeat;
+			background-size: contain;
+		}
+		span {
+			display: none;
+		}
+	}
+	&__prev {
+		&::after {
+			background-image: url('../../images/icons/pagination-prev.svg');
+		}
+	}
+	&__list {
+		margin: 0 6px;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+		li {
+			margin: 0 3px;
+			&.pagination__item-hidden {
+				display: none;
+			}
+		}
+		a {
+			display: inline-block;
+			width: 36px;
+			height: 36px;
+			line-height: 36px;
+			border: 1px solid #3A3A3A;
+			text-align: center;
+			font-size: 12px;
+			letter-spacing: 0.1rem;
+			transition: $transition;
+			&:hover,
+			&:focus {
+				border-color: #fff;
+			}
+			&.active {
+				border-color: #fff;
+			}
+			&.pagination__etc {
+				border: 0;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.pagination {
+		&__inner {
+			max-width: 616px;
+		}
+		&__prev, 
+		&__next {
+			min-width: 50px;
+			height: 50px;
+			&::after {
+				width: 17px;
+				height: 12px;
+			}
+		}
+		&__list {
+			li {
+				&.pagination__item-hidden {
+					display: block;
+				}
+			}
+			a {
+				width: 50px;
+				height: 50px;
+				line-height: 50px;
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1280px) {
+	.pagination {
+		margin-top: 40px;
+		&__inner {
+			width: 100%;
+			max-width: 1690px;
+			padding: 0 25px;
+			margin: 0 auto;
+			align-items: center;
+		}
+		&__prev,
+		&__next {
+			min-width: auto;
+			height: auto;
+			border: 0;
+			span {
+				display: inline;
+			}
+		}
+		&__prev {
+			padding-left: 32px;
+			&::after {
+				left: 0;
+				top: 5px;
+				transform: none;
+			}
+		}
+		&__next {
+			padding-right: 32px;
+			&::after {
+				left: auto;
+				right: 0;
+				top: 5px;
+				transform: none;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1600px) {
+	.pagination {
+		margin-top: 50px;
+	}
 }

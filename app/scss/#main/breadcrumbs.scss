@@ -2,13 +2,11 @@
 	width: auto;
 	margin-top: 14px;
 	padding-left: 10px;
-	margin-right: 10px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	font-weight: 300;
 	font-size: 11px;
 	line-height: 12px;
+	white-space: nowrap;
+	text-align: center;
 	overflow-x: scroll;
 	-ms-overflow-style: none;
 	overflow: -moz-scrollbars-none;
@@ -17,6 +15,7 @@
 		height: 0; 
 	}
 	li {
+		display: inline-block;
 		margin-right: 14px;
 		padding-right: 17px;
 		position: relative;
@@ -28,9 +27,28 @@
 		}
 		&:last-child {
 			margin-right: 0;
-			padding-right: 0;
+			padding-right: 10px;
 			&::after {
 				display: none;
+			}
+		}
+	}
+	a {
+		position: relative;
+		&::after {
+			content: '';
+			position: absolute;
+			right: 0;
+			left: 0;
+			bottom: 0;
+			height: 1px;
+			background: #fff;
+			display: none;
+		}
+		&:hover,
+		&:focus {
+			&::after {
+				display: block;
 			}
 		}
 	}
@@ -39,7 +57,7 @@
 @media screen and(min-width: 768px) {
 	.breadcrumbs {
 		margin-top: 30px;
-		font-size: 13px;
+		font-size: 12px;
 		line-height: 120%;
 	}
 }

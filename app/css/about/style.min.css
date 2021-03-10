@@ -465,7 +465,7 @@ html .no-scroll, body .no-scroll {
 
 .container {
   padding: 0 10px;
-  max-width: 1680px;
+  max-width: 1690px;
   margin: 0 auto;
 }
 
@@ -837,6 +837,7 @@ html .no-scroll, body .no-scroll {
 .menu__inner {
   max-width: 1584px;
   padding: 0 22px;
+  padding-bottom: 10px;
   margin: 0 auto;
 }
 
@@ -1445,19 +1446,11 @@ html .no-scroll, body .no-scroll {
   width: auto;
   margin-top: 14px;
   padding-left: 10px;
-  margin-right: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   font-weight: 300;
   font-size: 11px;
   line-height: 12px;
+  white-space: nowrap;
+  text-align: center;
   overflow-x: scroll;
   -ms-overflow-style: none;
   overflow: -moz-scrollbars-none;
@@ -1469,6 +1462,7 @@ html .no-scroll, body .no-scroll {
 }
 
 .breadcrumbs li {
+  display: inline-block;
   margin-right: 14px;
   padding-right: 17px;
   position: relative;
@@ -1483,17 +1477,36 @@ html .no-scroll, body .no-scroll {
 
 .breadcrumbs li:last-child {
   margin-right: 0;
-  padding-right: 0;
+  padding-right: 10px;
 }
 
 .breadcrumbs li:last-child::after {
   display: none;
 }
 
+.breadcrumbs a {
+  position: relative;
+}
+
+.breadcrumbs a::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  background: #fff;
+  display: none;
+}
+
+.breadcrumbs a:hover::after, .breadcrumbs a:focus::after {
+  display: block;
+}
+
 @media screen and (min-width: 768px) {
   .breadcrumbs {
     margin-top: 30px;
-    font-size: 13px;
+    font-size: 12px;
     line-height: 120%;
   }
 }
@@ -1505,15 +1518,18 @@ html .no-scroll, body .no-scroll {
 }
 
 .info {
-  padding-bottom: 55px;
   margin-top: -10px;
   font-weight: 350;
   font-size: 11px;
   line-height: 16px;
+}
+
+.info__inner {
+  padding-bottom: 55px;
   position: relative;
 }
 
-.info::after {
+.info__inner::after {
   content: '';
   position: absolute;
   left: 10px;
@@ -1592,12 +1608,27 @@ html .no-scroll, body .no-scroll {
   background: #C4C4C4;
 }
 
+.info__chapter-text {
+  margin-bottom: 30px;
+}
+
 .info__chapter-about {
   margin-top: 30px;
 }
 
+.info__chapter-about:first-child {
+  margin-top: 0;
+}
+
 .info__chapter-about p {
   margin-top: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .info__inner::after {
+    left: 15px;
+    right: 15px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
@@ -1617,6 +1648,10 @@ html .no-scroll, body .no-scroll {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+  }
+  .info__inner::after {
+    left: 25px;
+    right: 25px;
   }
   .info__nav {
     margin: 0;
@@ -1656,6 +1691,9 @@ html .no-scroll, body .no-scroll {
     line-height: 28px;
     color: #CECECE;
   }
+  .info__chapter-text {
+    margin-bottom: 60px;
+  }
   .info__chapter-about {
     margin-top: 60px;
   }
@@ -1668,6 +1706,8 @@ html .no-scroll, body .no-scroll {
 @media screen and (min-width: 1440px) {
   .info {
     padding-top: 120px;
+  }
+  .info__inner {
     padding-bottom: 183px;
   }
   .info__list li {
@@ -1680,6 +1720,9 @@ html .no-scroll, body .no-scroll {
   }
   .info__chapter p {
     margin-bottom: 30px;
+  }
+  .info__chapter-text {
+    margin-bottom: 80px;
   }
   .info__chapter-about {
     margin-top: 80px;
@@ -1842,6 +1885,7 @@ html .no-scroll, body .no-scroll {
             align-items: flex-start;
   }
   .pro__text {
+    margin-bottom: 10px;
     font-size: 16px;
     line-height: 130%;
   }
@@ -1868,7 +1912,7 @@ html .no-scroll, body .no-scroll {
 
 @media screen and (min-width: 1366px) {
   .pro__text {
-    margin-top: 25px;
+    margin-top: 15px;
   }
   .pro__img-name {
     display: none;
@@ -2038,7 +2082,7 @@ html .no-scroll, body .no-scroll {
 
 @media screen and (min-width: 1600px) {
   .features {
-    max-width: 1680px;
+    max-width: 1690px;
     margin: 0 auto;
     margin-top: 100px;
     font-size: 16px;
@@ -2179,6 +2223,10 @@ html .no-scroll, body .no-scroll {
 }
 
 @media screen and (min-width: 768px) {
+  .footer__inner::before {
+    left: 15px;
+    right: 15px;
+  }
   .footer__logo {
     width: 329px;
     height: 106px;
@@ -2197,6 +2245,10 @@ html .no-scroll, body .no-scroll {
   }
   .footer__inner {
     padding: 63px 0 50px;
+  }
+  .footer__inner::before {
+    left: 25px;
+    right: 25px;
   }
   .footer__list {
     -webkit-box-orient: horizontal;

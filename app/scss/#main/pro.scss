@@ -97,6 +97,7 @@
 			align-items: flex-start;
 		}	
 		&__text {
+			margin-bottom: 10px;
 			font-size: 16px;
 			line-height: 130%;
 			p {
@@ -125,7 +126,7 @@
 @media screen and(min-width: 1366px) {
 	.pro {
 		&__text {
-			margin-top: 25px;
+			margin-top: 15px;
 		}
 		&__img {
 			&-name {

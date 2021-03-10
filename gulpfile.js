@@ -14,7 +14,16 @@ gulp.task('html', function() {
 gulp.task('script', function() {
     return gulp.src('app/js/*.js')
     .pipe(browserSync.reload({stream: true}))
-})
+}) 
+
+gulp.task('browserSync', function() {
+    browserSync.init({
+        server: {
+            baseDir: "app",
+            index: 'cardJK.html'
+        }
+    });
+});
 
 //INDEX SCSS
 gulp.task('indexSCSS', function() {
@@ -46,6 +55,56 @@ gulp.task('newsSCSS', function() {
     .pipe(browserSync.reload({stream: true}))
 });
 
+//SERVICES SCSS
+gulp.task('servicesSCSS', function() {
+    return gulp.src('app/scss/services/style.scss')
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('app/css/services'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
+//PARTNERS SCSS
+gulp.task('partnersSCSS', function() {
+    return gulp.src('app/scss/partners/style.scss')
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('app/css/partners'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
+//CONTACTS SCSS
+gulp.task('contactsSCSS', function() {
+    return gulp.src('app/scss/contacts/style.scss')
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('app/css/contacts'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
+//OWNER SCSS
+gulp.task('ownerSCSS', function() {
+    return gulp.src('app/scss/owner/style.scss')
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('app/css/owner'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
+//BUILDER SCSS
+gulp.task('builderSCSS', function() {
+    return gulp.src('app/scss/builder/style.scss')
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('app/css/builder'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
 //CITY SCSS
 gulp.task('citySCSS', function() {
     return gulp.src('app/scss/city/style.scss')
@@ -56,13 +115,14 @@ gulp.task('citySCSS', function() {
     .pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('browserSync', function() {
-    browserSync.init({
-        server: {
-            baseDir: "app",
-            index: 'city.html'
-        }
-    });
+//CARDJK SCSS
+gulp.task('cardjkSCSS', function() {
+    return gulp.src('app/scss/cardjk/style.scss')
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('app/css/cardjk'))
+    .pipe(browserSync.reload({stream: true}))
 });
 
 //INDEX
@@ -89,25 +149,28 @@ gulp.task('aboutJS', function() {
     .pipe(browserSync.reload({stream: true}))
 });
 
-//NEWS
-gulp.task('newsJS', function() {
+//COMMON
+gulp.task('commonJS', function() {
     return gulp.src([
-        'app/js/libs/swiper/swiper-bundle.min.js',
+        'app/js/libs/jquery/jquery-3.5.1.min.js',
         'app/js/_main/headerMenu.js', 
         'app/js/_main/phoneModal.js',
         ])
     .pipe(concat('script.min.js'))
     // .pipe(uglify())
-    .pipe(gulp.dest('app/js/news/'))
+    .pipe(gulp.dest('app/js/common/'))
     .pipe(browserSync.reload({stream: true}))
 });
 
 //CITY
 gulp.task('cityJS', function() {
     return gulp.src([
+        'app/js/libs/jquery/jquery-3.5.1.min.js', 
+        'app/js/libs/jquery-range/jquery-ui.min.js', 
+        'app/js/libs/jquery-range/jquery.ui.touch-punch.min.js', 
         'app/js/_main/headerMenu.js', 
         'app/js/_main/phoneModal.js',
-        'app/js/_main/estateModal.js',
+        'app/js/_main/estate.js',
         ])
     .pipe(concat('script.min.js'))
     // .pipe(uglify())
@@ -115,21 +178,45 @@ gulp.task('cityJS', function() {
     .pipe(browserSync.reload({stream: true}))
 });
 
+//CARDJK
+gulp.task('cardjkJS', function() {
+    return gulp.src([
+        'app/js/libs/jquery/jquery-3.5.1.min.js', 
+        'app/js/_main/headerMenu.js', 
+        'app/js/_main/phoneModal.js',
+        ])
+    .pipe(concat('script.min.js'))
+    // .pipe(uglify())
+    .pipe(gulp.dest('app/js/cardjk/'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
 gulp.task('watch', function() {
     gulp.watch('app/scss/**/*.scss', gulp.parallel('aboutSCSS'))
     gulp.watch('app/js/*.js', gulp.parallel('aboutJS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('newsSCSS'))
-    gulp.watch('app/js/*.js', gulp.parallel('newsJS'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('servicesSCSS'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('partnersSCSS'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('contactsSCSS'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('ownerSCSS'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('builderSCSS'))
+    gulp.watch('app/js/*.js', gulp.parallel('commonJS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('indexSCSS'))
     gulp.watch('app/js/*.js', gulp.parallel('indexJS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('citySCSS'))
     gulp.watch('app/js/*.js', gulp.parallel('cityJS'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('cardjkSCSS'))
+    gulp.watch('app/js/*.js', gulp.parallel('cardjkJS'))
     gulp.watch('app/**/*.html', gulp.parallel('html'))
     gulp.watch('app/js/*.js', gulp.parallel('script'))
 });
 
 gulp.task('default', gulp.parallel('indexSCSS', 'indexJS', 
                                     'aboutSCSS', 'aboutJS', 
-                                    'newsSCSS', 'newsJS', 
+                                    'newsSCSS', 'commonJS', 
+                                    'servicesSCSS', 'partnersSCSS',
+                                    'contactsSCSS', 'ownerSCSS',
+                                    'builderSCSS',
                                     'citySCSS', 'cityJS',
+                                    'cardjkSCSS', 'cardjkJS',
                                     'browserSync', 'watch'));

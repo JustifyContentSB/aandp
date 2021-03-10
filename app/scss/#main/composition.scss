@@ -1,0 +1,172 @@
+.composition {
+	display: none;
+	width: 100%;
+	max-width: 1690px;
+	padding: 0 25px;
+	margin: 0 auto;
+	margin-top: 100px;
+	&__show {
+		display: inline-block;
+		margin-bottom: 40px;
+		padding-right: 38px;
+		font-weight: bold;
+		font-size: 16px;
+		line-height: 26px;
+		letter-spacing: 0.1rem;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 38px;
+			bottom: 0;
+			height: 1px;
+			background: #fff;
+		}
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: 4px;
+			right: 0;
+			width: 25px;
+			height: 16px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-image: url('../../images/icons/pagination-next.svg');
+			transform: rotate(-90deg);
+		}
+	}
+	&__table {
+		width: 100%;
+		border-collapse: collapse;
+		&-header {
+			border-bottom: 3px solid #fff;
+			th {
+				padding: 15px 0;
+				text-align: left;
+				font-weight: 500;
+				font-size: 15px;
+				span {
+					padding-right: 28px;
+					position: relative;
+					&::after {
+						content: '';
+						position: absolute;
+						right: 0;
+						bottom: 3px;
+						width: 5px;
+						height: 12px;
+						background-image: url('../../images/icons/arrow-right.svg');
+						background-size: cover;
+						transform: rotate(90deg);
+					}
+				}
+			}
+		}
+		tr {
+			&:hover,
+			&:focus {
+				p {
+					background: #343434;
+				}
+			}
+			p {
+				height: 40px;
+				line-height: 40px;
+			}
+			&.composition__table-first {
+				td {
+					padding: 29px 0 17px;
+				}
+			}
+		}
+		td {
+			padding: 16px 0;
+			font-weight: 500;
+			font-size: 15px;
+			line-height: 19px;
+			border-bottom: 1px solid #343434;
+			&.composition__table-id {
+				font-size: 18px;
+			}
+			&.composition__table-price {
+				width: 200px;
+				font-weight: 700;
+				font-size: 18px;
+			}
+		}
+		&-id {
+			width: 150px;
+			span {
+				position: relative;
+				&::after {
+					content: '';
+					position: absolute;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					height: 1px;
+					background: #fff;
+				}
+			}
+		}
+		&-floor {
+			width: 135px;
+		}
+		&-size {
+			width: 200px;
+		}
+		&-bedroom {
+			width: 200px;
+		}
+		&-condition {
+			width: 200px;
+		}
+		&-metre {
+			width: 170px;
+		}
+		&-price {
+			font-weight: bold;
+		}
+	}
+}
+
+@media screen and(min-width: 1280px) {
+	.composition {
+		display: block;
+	}
+}
+
+@media screen and(min-width: 1600px) {
+	.composition {
+		display: block;
+		&__table {
+			td {
+				&.composition__table-id {
+					font-size: 21px;
+				}
+				&.composition__table-price {
+					font-size: 21px;
+				}
+			}
+			&-id {
+				width: 220px;
+			}
+			&-floor {
+				width: 185px;
+			}
+			&-size {
+				width: 300px;
+			}
+			&-bedroom {
+				width: 267px;
+			}
+			&-condition {
+				width: 252px;
+			}
+			&-metre {
+				width: 200px;
+			}
+		}
+	}
+}

@@ -80,13 +80,19 @@
 
 @media screen and(min-width: 768px) {
 	.footer {
+		&__inner {
+			&::before {
+				left: 15px;
+				right: 15px;
+			}
+		}
 		&__logo {
 			width: 329px;
 			height: 106px;
 		}
 		&__street {
 			br {
-				display: none;
+				display: none; 
 			}
 		}
 		&__copy {
@@ -102,6 +108,10 @@
 		margin-top: 60px;
 		&__inner {
 			padding: 63px 0 50px;
+			&::before {
+				left: 25px;
+				right: 25px;
+			}
 		}
 		&__list {
 			flex-direction: row;

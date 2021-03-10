@@ -1,0 +1,133 @@
+.address {
+	&__header {
+		font-weight: 400;
+		letter-spacing: 0;
+	}
+	&__tel {
+		display: inline-block;
+		font-size: 18px;
+		line-height: 120%;
+		margin-bottom: 2px;
+		font-weight: 300;
+		letter-spacing: 0.02rem;
+	}
+	&__map {
+		margin: 15px 0 25px;
+		width: auto;
+		max-height: 688px;
+	}
+	&__contacts {
+		p {
+			margin-bottom: 2px;
+		}
+	}
+	&__link {
+		letter-spacing: 0.1rem;
+		font-weight: 350;
+		a {
+			font-weight: 500;
+			position: relative;
+			&::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 1px;
+				background: #fff;
+			}
+			&[href="mailto:home@aandp.ru"] {
+				&::after {
+					display: none;
+				}
+				span {
+					position: relative;
+					&::after {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						height: 1px;
+						background: #fff;
+					}
+				}
+			}
+		}
+	}
+	&__info {
+		margin-top: 15px;
+		color: #CECECE;
+		p {
+			margin-bottom: 2px;
+		}
+	}
+	&__btn {
+		padding: 5px;
+		margin-top: 20px;
+		font-size: 13px;
+	}
+}
+
+@media screen and(min-width: 768px) {
+	.address {
+		&__btn {
+			min-width: 250px;
+		}
+	}
+}
+
+@media screen and(min-width: 1280px) {
+	.address {
+		&__tel {
+			font-size: 26px;
+		}
+		&__map {
+			margin: 30px 0;
+		}
+		&__info {
+			margin-top: 20px;
+		}
+		&__btn {
+			margin-top: 30px;
+			padding: 10px;
+			font-size: 16px;
+		}
+	}
+}
+
+@media screen and(min-width: 1440px) {
+	.address {
+		&__header {
+			font-size: 20px;
+			line-height: 26px;
+		}
+		&__tel {
+			margin-bottom: 6px;
+			font-size: 34px;
+			line-height: 44px;
+		}
+		&__contacts {
+			p {
+				margin-bottom: 9px;
+			}
+		}
+		&__link {
+			font-size: 17px;
+			line-height: 120%;
+		}
+		&__map {
+			margin: 35px 0 67px;
+		}
+		&__info {
+			margin-top: 32px;
+		}
+		&__btn {
+			min-width: 367px;
+			padding: 15px 10px;
+			margin-top: 45px;
+			font-size: 20px;
+			line-height: 26px;
+		}
+	}
+}
