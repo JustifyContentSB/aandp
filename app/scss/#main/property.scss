@@ -10,6 +10,9 @@
 		&:last-child {
 			margin-bottom: 0;
 		}
+		&.property__none {
+			display: none;
+		}
 	}
 	&__type {
 		min-width: 143px;
@@ -60,6 +63,10 @@
 			align-items: flex-start;
 		}
 		&__more {
+			margin-top: 20px;
+			font-size: 16px;
+			line-height: 26px;
+			font-weight: bold;
 			display: none;
 		}
 		&--hidden {
@@ -68,6 +75,9 @@
 		li {
 			margin-bottom: 20px;
 			letter-spacing: 0.1rem;
+			&.property__none {
+				display: flex;
+			}
 		}
 	}
 }
