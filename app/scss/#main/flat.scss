@@ -1,29 +1,20 @@
 .flat {
 	margin-top: 30px;
 	padding: 30px 0;
-	position: relative;
-	&::before, 
-	&::after {
-		content: '';
-		position: absolute;
-		top: 0;
-		left: 10px;
-		right: 10px;
-		height: 1px;
-		background: #303030;
-	}
-	&::after {
-		content: '';
-		position: absolute;
-		top: auto;
-		bottom: 0;
-		left: 10px;
-		right: 10px;
-		height: 1px;
-		background: #303030;
-	}
+	position: relative; 
 	&__header {
 		padding: 0 10px;
+		padding-top: 30px;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 10px;
+			right: 10px;
+			top: 0;
+			height: 1px;
+			background: #303030;
+		}
 		&-title {
 			font-weight: 300;
 			font-size: 16px;
@@ -32,9 +23,16 @@
 		&-link {
 			font-weight: 350;
 			font-size: 12px;
-			line-height: 28px;
+			line-height: 120%;
 			color: #808080;
 			position: relative;
+			&:hover,
+			&:focus {
+				color: #fff;
+				&::after {
+					display: none;
+				}
+			}
 			&::after {
 				content: '';
 				position: absolute;
@@ -46,13 +44,46 @@
 			}
 		}
 	}
+	&__btns {
+		margin-left: auto;
+		display: none;
+		.swiper {
+			&-button {
+				&-prev {
+					width: 40px;
+					height: 27px;
+					position: static;
+					transform: rotate(180deg);
+					&::after {
+						width: 40px;
+						height: 27px;
+						content: url('../../images/icons/swiper-btn.svg');
+						font-size: 0;
+					}
+				}
+				&-next {
+					margin-left: 40px;
+					width: 40px;
+					height: 27px;
+					position: static;
+					&::after {
+						width: 40px;
+						height: 27px;
+						content: url('../../images/icons/swiper-btn.svg');
+						font-size: 0;
+					}
+				}
+			}
+		}
+	}
 	&__swiper {
 		padding-left: 10px;
 		margin-top: 11px;
 	}
 	&__item {
-		width: 300px;
-		height: 170px;
+		width: 96%;
+		max-width: 500px;
+		height: auto;
 		overflow: hidden;
 		display: inline-block;
 		position: relative;
@@ -164,6 +195,26 @@
 
 @media screen and(min-width: 768px) {
 	.flat {
+		&__header {
+			padding: 0 15px;
+			margin-bottom: 20px;
+			display: flex;
+			align-items: flex-end;
+			flex-wrap: wrap;
+			&::before {
+				left: 15px;
+				right: 15px;
+			}
+			&-title {
+				margin-right: 20px;
+				font-size: 20px;
+				line-height: 120%;
+			}
+			&-link {
+				margin-bottom: 3px;
+				font-size: 14px;
+			}
+		}
 		&__info {
 			&-top {
 				width: 178px;
@@ -208,6 +259,16 @@
 
 @media screen and(min-width: 991px) {
 	.flat {
+		&__header {
+			margin-bottom: 25px;
+			&-title {
+				font-size: 24px;
+			}
+			&-link {
+				margin-bottom: 2px;
+				font-size: 16px;
+			}
+		}
 		&__info {
 			&-top {
 				width: 207px;
@@ -253,6 +314,36 @@
 
 @media screen and(min-width: 1280px) {
 	.flat {
+		margin-top: 60px;
+		&__header {
+			padding: 0 25px;
+			max-width: 1690px;
+			margin: 0 auto;
+			margin-bottom: 30px;
+			&::before {
+				display: none;
+				left: 25px;
+    			right: 25px;
+			}
+			&--line {
+				padding-top: 40px;
+				&::before {
+					display: block;
+				}
+			}
+			&-title {
+				margin-right: 30px;
+				font-size: 28px;
+				font-weight: 500;
+			}
+			&-link {
+				margin-bottom: 4px;
+				font-size: 16px;
+			}
+		}
+		&__btns {
+			display: flex;
+		}
 		&__info {
 			&-top {
 				width: 250px;
@@ -355,7 +446,12 @@
 				}
 			}
 		}
+		&__swiper {
+			padding: 0;
+		}
 		&__item {
+			width: calc(50% - 2px);
+			max-width: 955px;
 			&:hover,
 			&:focus {
 				.flat__info-bottom__links {
@@ -371,6 +467,20 @@
 
 @media screen and(min-width: 1366px) {
 	.flat {
+		&__header {
+			margin-bottom: 45px;
+			&--line {
+				margin-bottom: 70px;
+			}
+			&-title {
+				margin-right: 38px;
+				font-size: 40px;
+			}
+			&-link {
+				margin-bottom: 6px;
+				font-size: 18px;
+			}
+		}
 		&__info {
 			&-top {
 				width: 298px;
@@ -417,6 +527,15 @@
 
 @media screen and(min-width: 1440px) {
 	.flat {
+		margin-top: 100px;
+		&__header {
+			&--line {
+				padding-top: 60px;
+				&::before {
+					display: block;
+				}
+			}
+		}
 		&__info {
 			&-top {
 				width: 325px;
@@ -533,6 +652,14 @@
 					display: inline;
 				}
 			}
+		}
+	}
+}
+
+@media screen and(min-width: 1921px) {
+	.flat {
+		&__swiper {
+			padding-left: calc((100% - 1640px) / 2);
 		}
 	}
 }

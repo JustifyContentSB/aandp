@@ -83,6 +83,7 @@
 		}
 	}
 	&__tel {
+		margin-left: auto;
 		display: none;
 		font-weight: 500;
 		font-size: 18px;
@@ -139,11 +140,16 @@
 			}
 		}
 		&-text {
+			max-width: 287px;
+			margin: 0 auto;
 			margin-top: 40px;
-			padding: 0 25px;
+			padding: 0 10px;
 			font-size: 11px;
 			line-height: 17px;
 			text-align: center;
+			&__hidden {
+				display: none;
+			}
 		}
 		&-more {
 			min-width: 202px;
@@ -159,6 +165,9 @@
 			font-weight: bold;
 			font-size: 11px;
 			line-height: 19px;
+			span {
+				display: none;
+			}
 		}
 	}
 }
@@ -170,6 +179,16 @@
 			&-rate {
 				display: flex;
 				margin-left: 30px;
+			}
+		}
+		&__bottom {
+			&-text {
+				max-width: 640px;
+				font-size: 14px;
+				line-height: 130%;
+			}
+			&-more {
+				margin-bottom: 60px;
 			}
 		}
 	}
@@ -202,6 +221,22 @@
 			&-realty {
 				display: flex;
 			}
+			&-text {
+				font-size: 16px;
+				line-height: 25px;
+				&__hidden {
+					display: inline;
+				}
+			}
+			&-more {
+				margin-top: 43px;
+				min-width: 262px;
+				padding: 14px;
+				font-size: 12px;
+				span {
+					display: inline;
+				}
+			}
 		}
 		&__search {
 			display: none;
@@ -217,6 +252,12 @@
 		min-height: 417px;
 		&__top {
 			padding: 31px 38px;
+		}
+		&__bottom {
+			&-text {
+				max-width: 920px;
+				margin-top: 15px;	
+			}
 		}
 	}
 }

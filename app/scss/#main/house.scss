@@ -356,6 +356,19 @@
 	.house {
 		&__swiper {
 			padding-left: calc((100% - 1640px)/2);
+			&--index {
+				padding-left: 0;
+			}
+		}
+	}
+}
+
+@media screen and(min-width: 1921px) {
+	.house {
+		&__swiper {
+			&--index {
+				padding-left: calc((100% - 1640px)/2);
+			}
 		}
 	}
 }

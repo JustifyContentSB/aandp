@@ -20,7 +20,7 @@ gulp.task('browserSync', function() {
     browserSync.init({
         server: {
             baseDir: "app",
-            index: 'cardJK.html'
+            index: 'index.html'
         }
     });
 });
@@ -125,6 +125,16 @@ gulp.task('cardjkSCSS', function() {
     .pipe(browserSync.reload({stream: true}))
 });
 
+//CARDOBJ SCSS
+gulp.task('cardobjSCSS', function() {
+    return gulp.src('app/scss/cardobj/style.scss')
+    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('app/css/cardobj'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
 //INDEX
 gulp.task('indexJS', function() {
     return gulp.src([
@@ -191,6 +201,21 @@ gulp.task('cardjkJS', function() {
     .pipe(browserSync.reload({stream: true}))
 });
 
+//CARDOBJ
+gulp.task('cardobjJS', function() {
+    return gulp.src([
+        'app/js/libs/jquery/jquery-3.5.1.min.js', 
+        'app/js/_main/headerMenu.js', 
+        'app/js/_main/phoneModal.js',
+        'app/js/_main/swiperClubhouse.js',
+        'app/js/_main/swiperHouse.js',
+        ])
+    .pipe(concat('script.min.js'))
+    // .pipe(uglify())
+    .pipe(gulp.dest('app/js/cardobj/'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
 gulp.task('watch', function() {
     gulp.watch('app/scss/**/*.scss', gulp.parallel('aboutSCSS'))
     gulp.watch('app/js/*.js', gulp.parallel('aboutJS'))
@@ -207,6 +232,8 @@ gulp.task('watch', function() {
     gulp.watch('app/js/*.js', gulp.parallel('cityJS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('cardjkSCSS'))
     gulp.watch('app/js/*.js', gulp.parallel('cardjkJS'))
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('cardobjSCSS'))
+    gulp.watch('app/js/*.js', gulp.parallel('cardobjJS'))
     gulp.watch('app/**/*.html', gulp.parallel('html'))
     gulp.watch('app/js/*.js', gulp.parallel('script'))
 });
@@ -219,4 +246,5 @@ gulp.task('default', gulp.parallel('indexSCSS', 'indexJS',
                                     'builderSCSS',
                                     'citySCSS', 'cityJS',
                                     'cardjkSCSS', 'cardjkJS',
+                                    'cardobjSCSS', 'cardobjJS',
                                     'browserSync', 'watch'));

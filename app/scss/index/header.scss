@@ -9,5 +9,25 @@
 	}
 	.main-title {
 		margin-top: 32px;
+		br {
+			display: inline;
+		}
+	}
+}
+
+@media screen and(min-width: 1280px) {
+	.header {
+		min-height: 800px;
+	}
+}
+
+@media screen and(min-width: 1440px) {
+	.header {
+		min-height: 1080px;
+		.main-title {
+			margin-top: 220px;
+			font-size: 83px;
+			line-height: 100px;
+		}
 	}
 }
