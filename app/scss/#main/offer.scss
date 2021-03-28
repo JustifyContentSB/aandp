@@ -55,13 +55,14 @@
 			border: 1px solid #4E4E4E;
 			position: relative;
 			svg {
-				display: none;
+				opacity: 0;
 				position: absolute;
 				top: 3px;
 				left: 4px;
 			}
 		}
 		&-text {
+			display: block;
 			width: calc(100% - 41px);
 			a {
 				color: $brown;
@@ -72,7 +73,7 @@
 			&:checked ~ .offer__agree-checkbox {
 				background: $brown;
 				svg {
-					display: block;
+					opacity: 1;
 				}
 			}
 		}

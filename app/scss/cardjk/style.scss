@@ -1,19 +1,17 @@
 @import '../../../node_modules/normalize.css/normalize';
+@import '../../js/libs/swiper/swiper-bundle.min.css';
 
 @import '../#base/base.scss';
 @import '../#base/vars.scss';
 @import '../#base/fonts.scss';
 @import '../#base/body.scss';
-@import '../#main/wrapper.scss';
 @import '../#main/container.scss';
 @import '../#main/rate.scss';
 @import '../#main/btn.scss';
 @import '../#main/main-title.scss';
 @import '../#main/header.scss';
-@import 'header.scss';
 @import '../#main/menu.scss';
 @import '../#main/breadcrumbs.scss';
-@import 'breadcrumbs.scss';
 @import '../#main/show.scss';
 @import '../#main/property.scss';
 @import '../#main/clubhouse.scss';
@@ -22,7 +20,6 @@
 @import '../#main/arbat.scss';
 @import '../#main/pro.scss';
 @import '../#main/features.scss';
-@import 'features.scss';
 @import '../#main/footer.scss';
 @import '../#main/phone.scss';
 @import '../#main/overlay.scss';

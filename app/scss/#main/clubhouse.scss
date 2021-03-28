@@ -64,7 +64,7 @@
 		}
 	}
 	&__list {
-		margin-bottom: 30px;
+		margin-bottom: 20px;
 		display: none;
 		flex-wrap: wrap;
 		font-weight: 350;
@@ -74,6 +74,7 @@
 		text-align: center;
 		li {
 			margin-right: 10px;
+			margin-bottom: 10px;
 		}
 		a {
 			display: flex;

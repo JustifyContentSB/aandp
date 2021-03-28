@@ -18,6 +18,12 @@
 		line-height: 15px;
 		text-align: center;
 		border: 1px solid #FFFFFF;
+		transition: $transition;
+		&:hover,
+		&:focus {
+			background: #fff;
+			color: #212121;
+		}
 	}
 }
 

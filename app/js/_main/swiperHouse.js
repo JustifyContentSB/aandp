@@ -7,7 +7,7 @@ let houseSwiperOne = new Swiper('.house__swiper-one', {
   	},
   	breakpoints: { 
   		1280: { 
-			spaceBetween: 10,
+			spaceBetween: 7,
   		} 
   	},
 });	
@@ -21,7 +21,7 @@ let houseSwiperTwo = new Swiper('.house__swiper-two', {
   	},
   	breakpoints: { 
   		1280: { 
-			spaceBetween: 10,
+			spaceBetween: 7,
   		} 
   	},
 });	
@@ -35,7 +35,7 @@ let houseSwiperThree = new Swiper('.house__swiper-three', {
   	},
   	breakpoints: { 
   		1280: { 
-			spaceBetween: 10,
+			spaceBetween: 7,
   		} 
   	},
 });	

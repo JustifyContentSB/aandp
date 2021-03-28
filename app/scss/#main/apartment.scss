@@ -1,51 +1,5 @@
 .apartment {
-	padding-top: 55px;
-	margin-top: -35px;
-	&__btns {
-		position: relative;
-		top: -30px;
-		width: 90px;
-		height: 20px;
-		margin: 0 auto;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		flex-wrap: wrap;
-		.swiper {
-			&-button {
-				&-prev {
-					position: static;
-					width: 30px;
-					height: 20px;
-					&::after {
-						content: '';
-						position: absolute;
-						width: 30px;
-						height: 20px;
-						background-image: url('../../images/icons/swiper-prev.svg');
-						background-size: cover;
-						background-repeat: no-repeat;
-						font-size: 0;
-					}
-				}
-				&-next {
-					position: static;
-					width: 30px;
-					height: 20px;
-					&::after {
-						content: '';
-						position: absolute;
-						width: 30px;
-						height: 20px;
-						background-image: url('../../images/icons/swiper-prev.svg');
-						background-size: cover;
-						background-repeat: no-repeat;
-						transform: rotate(180deg);
-					}
-				}
-			}
-		}
-	}
+	margin-top: 25px;
 	&__swiper {
 		padding-left: 10px;
 	}
@@ -139,30 +93,6 @@
 			&-offer {
 				font-size: 21px;
 				line-height: 27px;
-			}
-		}
-		&__btns {
-			width: 120px;
-			height: 27px;
-		}
-		.swiper {
-			&-button {
-				&-prev {
-					width: 40px;
-					height: 27px;
-					&::after {
-						width: 40px;
-						height: 27px;
-					}
-				}
-				&-next {
-					width: 40px;
-					height: 27px;
-					&::after {
-						width: 40px;
-						height: 27px;
-					}
-				}
 			}
 		}
 	}

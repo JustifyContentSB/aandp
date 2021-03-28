@@ -7,8 +7,4 @@ let apartmentSwiper = new Swiper('.apartment__swiper', {
 			slidesPerColumn: 2,
         },
     },
-	navigation: {
-		nextEl: '.apartment__button-next',
-		prevEl: '.apartment__button-prev', 
-	},
 });

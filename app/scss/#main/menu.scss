@@ -82,12 +82,14 @@
 			}
 		}
 		&-label {
+			display: block;
 			position: relative;
 			&::before {
 				content: '';
 				position: absolute;
 				left: 12px;
-				top: 6px;
+				top: 50%;
+				transform: translateY(-50%);
 				width: 16px;
 				height: 16px;
 				background-image: url('../../images/icons/search.svg');
@@ -299,7 +301,6 @@
 				&::before {
 					width: 21px;
 					height: 21px;
-					top: 0;
 					left: 16px;
 				}
 			}
@@ -406,7 +407,6 @@
 			}
 			&-label {
 				&::before {
-					top: -2px;
 					left: 24px;
 				}
 			}

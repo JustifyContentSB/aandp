@@ -8,8 +8,8 @@
 	<link rel="stylesheet" href="css/index/style.min.css">
 </head>
 <body>
- 
-	<header class="header">
+
+	<header class="header header-index">
 		<div class="header__inner">
 			<div class="header__top">
 				<div class="header__top-left">
@@ -38,9 +38,35 @@
 					<li><a href="#">Коммерческая недвижимость</a></li>
 					<li><a href="#">Зарубежная недвижимость</a></li>
 				</ul>
-				<h1 class="main-title">ЖК "KUZNETSKY MOST <br> 12 BY LALIQUE"</h1>
-				<p class="header__bottom-text">Проект с уникальной концепцией представляет собой реконструкцию с реставрацией фасадов знаменитого «Пассажа Попова». <span class="header__bottom-text__hidden">На шести этажах здания спланированы: 41 de luxe апартамент, 16 duplex de luxe апартаментов, 2 king suite студии и 2 пентхауса с террасами, откуда открываются виды на Кремль, ЦУМ и Большой театр.</span></p>
-				<a class="header__bottom-more" href="#">Подробнее <span>о комплексе</span></a>
+			</div>
+			<div class="header__swiper swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide" style="background-image:url(images/index/header-bg.jpg)">
+						<div class="header__swiper-info">
+							<h1 class="main-title">ЖК "KUZNETSKY MOST <br> 12 BY LALIQUE"</h1>
+							<p class="header__swiper-text">Проект с уникальной концепцией представляет собой реконструкцию с реставрацией фасадов знаменитого «Пассажа Попова». <span class="header__swiper-text__hidden">На шести этажах здания спланированы: 41 de luxe апартамент, 16 duplex de luxe апартаментов, 2 king suite студии и 2 пентхауса с террасами, откуда открываются виды на Кремль, ЦУМ и Большой театр.</span></p>
+							<a class="header__swiper-more" href="#">Подробнее <span>о комплексе</span></a>
+						</div>
+					</div>
+					<div class="swiper-slide" style="background-image:url(images/owner/header-bg.jpg)">
+						<div class="header__swiper-info">
+							<h1 class="main-title">ЖК "KUZNETSKY MOST <br> 12 BY LALIQUE"</h1>
+							<p class="header__swiper-text">Проект с уникальной концепцией представляет собой реконструкцию с реставрацией фасадов знаменитого «Пассажа Попова». <span class="header__swiper-text__hidden">На шести этажах здания спланированы: 41 de luxe апартамент, 16 duplex de luxe апартаментов, 2 king suite студии и 2 пентхауса с террасами, откуда открываются виды на Кремль, ЦУМ и Большой театр.</span></p>
+							<a class="header__swiper-more" href="#">Подробнее <span>о комплексе</span></a>
+						</div>
+					</div>
+					<div class="swiper-slide" style="background-image:url(images/news/header-bg.jpg)">
+						<div class="header__swiper-info">
+							<h1 class="main-title">ЖК "KUZNETSKY MOST <br> 12 BY LALIQUE"</h1>
+							<p class="header__swiper-text">Проект с уникальной концепцией представляет собой реконструкцию с реставрацией фасадов знаменитого «Пассажа Попова». <span class="header__swiper-text__hidden">На шести этажах здания спланированы: 41 de luxe апартамент, 16 duplex de luxe апартаментов, 2 king suite студии и 2 пентхауса с террасами, откуда открываются виды на Кремль, ЦУМ и Большой театр.</span></p>
+							<a class="header__swiper-more" href="#">Подробнее <span>о комплексе</span></a>
+						</div>
+					</div>
+				</div>
+				<div class="header__swiper-btns">
+					<div class="header__swiper-prev swiper-button-prev"></div>
+					<div class="header__swiper-next swiper-button-next"></div>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -117,10 +143,6 @@
 	<main>
 
 		<section class="apartment">
-			<div class="apartment__btns">
-    			<div class="apartment__button-prev swiper-button-prev"></div>
-    			<div class="apartment__button-next swiper-button-next"></div>
-    		</div>
 			<div class="apartment__swiper swiper-container">
 				<div class="swiper-wrapper">
 					<a class="apartment__slide swiper-slide" href="#">
@@ -270,7 +292,7 @@
 				</div>
 			</div>
 		</section>
-	
+
 		<section class="features">
 			<h2 class="features__title">Агентство элитной недвижимости</h2>
 			<ul class="features__list">
@@ -299,12 +321,12 @@
 					<h2 class="flat__header-title">Объекты в ЖК ARISTAN:</h2>
 					<a class="flat__header-link" href="#">Другие предложения</a>
 					<div class="flat__btns">
-						<div class="swiper-button-prev house__swiper-one-prev"></div>
-						<div class="swiper-button-next house__swiper-one-next"></div>
-    				</div>
+						<div class="swiper-button-prev flat__swiper-one-prev"></div>
+						<div class="swiper-button-next flat__swiper-one-next"></div>
+					</div>
 				</header>
 			</div>
-			<div class="flat__swiper swiper-container">
+			<div class="flat__swiper flat__swiper-one swiper-container">
 				<div class="swiper-wrapper">
 					<div class="flat__item swiper-slide">
 						<img src="images/estate/estate-complex-1.jpg" alt="КЛУБНЫЙ ДОМ «WHITE KHAMOVNIKI»">
@@ -418,9 +440,13 @@
 				<header class="flat__header">
 					<h2 class="flat__header-title">Лучшие жилые комплексы</h2>
 					<a class="flat__header-link" href="#">Другие предложения</a>
+					<div class="flat__btns">
+						<div class="swiper-button-prev flat__swiper-two-prev"></div>
+						<div class="swiper-button-next flat__swiper-two-next"></div>
+					</div>
 				</header>
 			</div>
-			<div class="flat__swiper swiper-container">
+			<div class="flat__swiper flat__swiper-two swiper-container">
 				<div class="swiper-wrapper">
 					<div class="flat__item swiper-slide">
 						<img src="images/estate/estate-complex-1.jpg" alt="КЛУБНЫЙ ДОМ «WHITE KHAMOVNIKI»">
@@ -533,7 +559,7 @@
 									<path d="M14.1666 4.25L6.37492 12.0417L2.83325 8.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 								</svg>
 							</span>
-							<p class="offer__agree-text">Я соглашаюсь на обработку персональных данных, а также с <a href="#">условиями подписки.</a></p>
+							<span class="offer__agree-text">Я соглашаюсь на обработку персональных данных, а также с <a href="#">условиями подписки.</a></span>
 						</label>
 					</form>
 				</div>
@@ -548,7 +574,7 @@
 					<div class="house__btns">
 						<div class="swiper-button-prev house__swiper-one-prev"></div>
 						<div class="swiper-button-next house__swiper-one-next"></div>
-    				</div>
+					</div>
 				</header>
 				<div class="house__swiper house__swiper--index house__swiper-one swiper-container">
 					<div class="swiper-wrapper">
@@ -609,7 +635,7 @@
 					<div class="house__btns">
 						<div class="swiper-button-prev house__swiper-two-prev"></div>
 						<div class="swiper-button-next house__swiper-two-next"></div>
-    				</div>
+					</div>
 				</header>
 				<div class="house__swiper house__swiper--index house__swiper-two swiper-container">
 					<div class="swiper-wrapper">
@@ -667,9 +693,13 @@
 				<header class="flat__header">
 					<h2 class="flat__header-title">Лучшие жилые комплексы</h2>
 					<a class="flat__header-link" href="#">Другие предложения</a>
+					<div class="flat__btns">
+						<div class="swiper-button-prev flat__swiper-three-prev"></div>
+						<div class="swiper-button-next flat__swiper-three-next"></div>
+					</div>
 				</header>
 			</div>
-			<div class="flat__swiper swiper-container">
+			<div class="flat__swiper flat__swiper-three swiper-container">
 				<div class="swiper-wrapper">
 					<div class="flat__item swiper-slide">
 						<img src="images/estate/estate-complex-1.jpg" alt="КЛУБНЫЙ ДОМ «WHITE KHAMOVNIKI»">
@@ -765,6 +795,28 @@
 			</div>
 		</section>
 
+		<section class="features">
+			<h2 class="features__title">Почему "Ашихмин и Партнёры"</h2>
+			<ul class="features__list">
+				<li>
+					<h2 class="features__list-title">Индивидуальный подход</h2>
+					<p>Найдём лучшие варианты и обо всём договоримся за вас</p>
+				</li>
+				<li>
+					<h2 class="features__list-title">Исключительная репутация</h2>
+					<p>Экспертиза, знание рынка, внимание к клиенту</p>
+				</li>
+				<li>
+					<h2 class="features__list-title">Работаем не по графику</h2>
+					<p>Клубные дома и закрытые продажи</p>
+				</li>
+				<li>
+					<h2 class="features__list-title">Каждый сотрудник - эксперт</h2>
+					<p>Договоримся о скидке, добьёмся наилучших условий</p>
+				</li>
+			</ul>
+		</section>
+
 		<section class="pro">
 			<div class="container pro__inner">
 				<div class="pro__img">
@@ -818,14 +870,80 @@
 			<a class="phone__modal-whatsapp phone__modal-link" href="whatsapp://send?text=Hello&phone=+74951201100&abid=+74951201100">Написать в WhatsApp</a>
 		</div>
 	</div>
+	<div class="download">
+		<div class="download__top">
+			<h2 class="download__title">Скачайте каталог недвижимости</h2>
+			<a class="download__close" href="#">
+				<span class="download__close-icon"></span>
+				<span class="download__close-text">Закрыть</span>
+			</a>
+		</div>
+		<div class="download__inner">
+			<p class="download__text">Несмотря на то, что в настоящее время слово «пентхаус» обозначает роскошные и дорогие апартаменты, откуда открывается панорамный вид, исторически пентхаус был всего лишь пристройкой с односкатной крышей, навесом или другим небольшим строением, которое пристраивалось к сравнительно большому зданию.</p>
+			<p class="download__descr">Более 230 предложений</p>
+			<form class="download__form" action="#">
+				<input class="download__form-input" type="text" placeholder="Ваше имя">
+				<input class="download__form-input" type="tel" placeholder="+7">
+				<input class="download__form-input" type="email" placeholder="E-mail">
+				<label class="download__agree">
+					<input type="checkbox">
+					<span class="download__agree-checkbox">
+						<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.1666 4.25L6.37492 12.0417L2.83325 8.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</span>
+					<span class="download__agree-text">Соглашаюсь с политикой конфиденциальности.</span>
+				</label>
+				<button class="btn" type="submit">Отправить заявку</button>
+			</form>
+		</div>
+		<img class="download__img" src="images/catalog/catalog-dekstop.png" alt="каталог">
+	</div>
+	<div class="request">
+		<div class="request__top">
+			<h2 class="request__title">Заявка <span>на осмотр</span></h2>
+			<a class="request__close" href="#">
+				<span class="request__close-icon"></span>
+				<span class="request__close-text">Закрыть</span>
+			</a>
+		</div>
+		<div class="request__inner">
+			<form class="request__form" action="#">
+				<input class="request__input" type="text" placeholder="Ваше имя">
+				<input class="request__input" type="tel" placeholder="+7 ">
+				<input class="request__input" type="email" placeholder="E-mail">
+				<textarea class="request__textarea" placeholder="Комментарий к заявке. Здесь вы можете указать желаемое время звонки или другую важную информацию."></textarea>
+				<label class="request__agree">
+					<input type="checkbox">
+					<span class="request__agree-checkbox">
+						<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path d="M14.1666 4.25L6.37492 12.0417L2.83325 8.5" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+						</svg>
+					</span>
+					<span class="request__agree-text">Соглашаюсь с политикой конфиденциальности.</span>
+				</label>
+				<button class="btn">Отправить заявку</button>
+			</form>
+			<div class="request__map">
+				<div class="request__item">
+					<div class="request__item-top">
+						<a href="#"><h2 class="request__item-title">НАЗВАНИЕ ЖК ДОСТАТОЧНО ДЛИННОЕ МОЖНО ДАЖЕ ТРИ СТРОКИ</h2></a>
+						<p class="request__item-address">1-й Зачатьевский переулок, дом 8 строение 3</p>
+					</div>
+					<div class="request__item-bottom">
+						<p class="request__item-size">Объекты от 32 м<sup>2</sup></p>
+						<p class="request__item-price">от  29 180 800 &#8381;</p>
+					</div>
+				</div>
+			</div>		
+		</div>
+		<div class="request__map"></div>
+	</div>	
 	<div class="overlay"></div>
 
-	<script src="js/libs/jquery/jquery-3.5.1.min.js"></script>
-	<script src="js/libs/swiper/swiper-bundle.min.js"></script>
 	<script src="js/index/script.min.js"></script>
-	<script src="js/_main/swiperApartment.js"></script>
-	<script src="js/_main/swiperFlat.js"></script>
-	<script src="js/_main/swiperHouse.js"></script>
+	<script src="js/_main/featuresIndex.js"></script>
+	<script src="js/_main/swiperIndexheader.js"></script>
 
 </body>
 </html>

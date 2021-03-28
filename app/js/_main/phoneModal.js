@@ -11,3 +11,9 @@ $('.phone__modal-close').on('click', function(e) {
 	$('.overlay').removeClass('active');
 	$('body').removeClass('no-scroll');
 });
+
+$('.overlay').on('click', function(e) {
+	$('.phone__modal').removeClass('active');
+	$('.overlay').removeClass('active');
+	$('body').removeClass('no-scroll');
+});

@@ -20,7 +20,7 @@ gulp.task('browserSync', function() {
     browserSync.init({
         server: {
             baseDir: "app",
-            index: 'index.html'
+            index: 'index.html' 
         }
     });
 });
@@ -138,24 +138,17 @@ gulp.task('cardobjSCSS', function() {
 //INDEX
 gulp.task('indexJS', function() {
     return gulp.src([
+        'app/js/libs/jquery/jquery-3.5.1.min.js',
+        'app/js/libs/swiper/swiper-bundle.min.js',
         'app/js/_main/headerMenu.js', 
         'app/js/_main/phoneModal.js',
+        'app/js/_main/swiperApartment.js',
+        'app/js/_main/swiperFlatIndex.js',
+        'app/js/_main/swiperHouse.js',
         ])
     .pipe(concat('script.min.js'))
     // .pipe(uglify())
     .pipe(gulp.dest('app/js/index/'))
-    .pipe(browserSync.reload({stream: true}))
-});
-
-//ABOUT
-gulp.task('aboutJS', function() {
-    return gulp.src([
-        'app/js/_main/headerMenu.js', 
-        'app/js/_main/phoneModal.js',
-        ])
-    .pipe(concat('script.min.js'))
-    // .pipe(uglify())
-    .pipe(gulp.dest('app/js/about/'))
     .pipe(browserSync.reload({stream: true}))
 });
 
@@ -169,6 +162,20 @@ gulp.task('commonJS', function() {
     .pipe(concat('script.min.js'))
     // .pipe(uglify())
     .pipe(gulp.dest('app/js/common/'))
+    .pipe(browserSync.reload({stream: true}))
+});
+
+//NEWS
+gulp.task('newsJS', function() {
+    return gulp.src([
+        'app/js/libs/jquery/jquery-3.5.1.min.js',
+        'app/js/_main/headerMenu.js', 
+        'app/js/_main/phoneModal.js',
+        'app/js/_main/infoList.js',
+        ])
+    .pipe(concat('script.min.js'))
+    // .pipe(uglify())
+    .pipe(gulp.dest('app/js/news/'))
     .pipe(browserSync.reload({stream: true}))
 });
 
@@ -192,8 +199,13 @@ gulp.task('cityJS', function() {
 gulp.task('cardjkJS', function() {
     return gulp.src([
         'app/js/libs/jquery/jquery-3.5.1.min.js', 
+        'app/js/libs/swiper/swiper-bundle.min.js', 
         'app/js/_main/headerMenu.js', 
         'app/js/_main/phoneModal.js',
+        'app/js/_main/dots.js',
+        'app/js/_main/compositionTable.js',
+        'app/js/_main/swiperClubhouse.js',
+        'app/js/_main/swiperHouse.js',
         ])
     .pipe(concat('script.min.js'))
     // .pipe(uglify())
@@ -205,8 +217,10 @@ gulp.task('cardjkJS', function() {
 gulp.task('cardobjJS', function() {
     return gulp.src([
         'app/js/libs/jquery/jquery-3.5.1.min.js', 
+        'app/js/libs/swiper/swiper-bundle.min.js', 
         'app/js/_main/headerMenu.js', 
         'app/js/_main/phoneModal.js',
+        'app/js/_main/dots.js',
         'app/js/_main/swiperClubhouse.js',
         'app/js/_main/swiperHouse.js',
         ])
@@ -218,7 +232,6 @@ gulp.task('cardobjJS', function() {
 
 gulp.task('watch', function() {
     gulp.watch('app/scss/**/*.scss', gulp.parallel('aboutSCSS'))
-    gulp.watch('app/js/*.js', gulp.parallel('aboutJS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('newsSCSS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('servicesSCSS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('partnersSCSS'))
@@ -226,6 +239,7 @@ gulp.task('watch', function() {
     gulp.watch('app/scss/**/*.scss', gulp.parallel('ownerSCSS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('builderSCSS'))
     gulp.watch('app/js/*.js', gulp.parallel('commonJS'))
+    gulp.watch('app/js/*.js', gulp.parallel('newsJS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('indexSCSS'))
     gulp.watch('app/js/*.js', gulp.parallel('indexJS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('citySCSS'))
@@ -239,12 +253,12 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', gulp.parallel('indexSCSS', 'indexJS', 
-                                    'aboutSCSS', 'aboutJS', 
-                                    'newsSCSS', 'commonJS', 
+                                    'aboutSCSS', 'commonJS',
+                                    'newsSCSS',  'builderSCSS',
                                     'servicesSCSS', 'partnersSCSS',
                                     'contactsSCSS', 'ownerSCSS',
-                                    'builderSCSS',
                                     'citySCSS', 'cityJS',
                                     'cardjkSCSS', 'cardjkJS',
                                     'cardobjSCSS', 'cardobjJS',
+                                    'newsJS',
                                     'browserSync', 'watch'));

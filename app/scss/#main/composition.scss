@@ -7,13 +7,17 @@
 	margin-top: 100px;
 	&__show {
 		display: inline-block;
-		margin-bottom: 40px;
 		padding-right: 38px;
 		font-weight: bold;
 		font-size: 16px;
 		line-height: 26px;
 		letter-spacing: 0.1rem;
 		position: relative;
+		&.active {
+			&::after {
+				transform: rotate(90deg);
+			}
+		}
 		&::before {
 			content: '';
 			position: absolute;
@@ -34,9 +38,12 @@
 			background-size: cover;
 			background-image: url('../../images/icons/pagination-next.svg');
 			transform: rotate(-90deg);
+			transition: $transition;
 		}
 	}
 	&__table {
+		margin-top: 40px;
+		display: none;
 		width: 100%;
 		border-collapse: collapse;
 		&-header {
@@ -64,6 +71,7 @@
 			}
 		}
 		tr {
+			cursor: pointer;
 			&:hover,
 			&:focus {
 				p {
@@ -134,12 +142,16 @@
 @media screen and(min-width: 1280px) {
 	.composition {
 		display: block;
+		&__table {
+			&.active {
+				display: block;
+			}
+		}
 	}
 }
 
 @media screen and(min-width: 1600px) {
 	.composition {
-		display: block;
 		&__table {
 			td {
 				&.composition__table-id {

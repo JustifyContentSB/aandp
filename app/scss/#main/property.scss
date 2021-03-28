@@ -16,6 +16,9 @@
 	}
 	&__type {
 		min-width: 143px;
+		width: 143px;
+		margin-right: 5px;
+		overflow-x: hidden;
 	}
 	&__descr {
 		font-weight: 400;
@@ -38,6 +41,12 @@
 			height: 1px;
 			background: #fff;
 		}
+		&:hover,
+		&:focus {
+			&::after {
+				display: none;
+			}
+		}
 	}
 	&--hidden {
 		display: none;
@@ -50,6 +59,7 @@
 		line-height: 120%;
 		&__type {
 			min-width: 240px;
+			width: 240px;
 		}
 	}
 }

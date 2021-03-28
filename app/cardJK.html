@@ -5,12 +5,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>КЛУБНЫЙ ДОМ "ARTISAN" УЛ. ТРУБНАЯ 45</title>
-	<link rel="stylesheet" href="js/libs/swiper/swiper-bundle.min.css">
 	<link rel="stylesheet" href="css/cardjk/style.min.css">
 </head>
 <body>
 	 
-	<header class="header">
+	<header class="header header-cardjk">
 		<div class="header__inner">
 			<div class="header__top">
 				<div class="header__top-left">
@@ -120,6 +119,7 @@
 
 	<main>
 		<section class="clubhouse">
+			<h2 class="visually-hidden">Фотогалерея объекта</h2>
 			<div class="clubhouse__slider">
 				<div class="clubhouse__swiper swiper-container">
 					<div class="swiper-wrapper">
@@ -306,8 +306,9 @@
 		</section>
 
 		<section class="composition">
-			<a class="composition__show" href="#">Показать списком</a>
-			<table class="composition__table">
+			<h2 class="visually-hidden">Таблица объектов</h2>
+			<a class="composition__show active" href="#">Показать списком</a>
+			<table class="composition__table active">
 				<tbody>
 					<tr class="composition__table-header">
 						<th><span>Номер ID</span></th>
@@ -585,10 +586,7 @@
 	</div>
 	<div class="overlay"></div>
 
-	<script src="js/libs/jquery/jquery-3.5.1.min.js"></script>
-	<script src="js/libs/swiper/swiper-bundle.min.js"></script>
-	<script src="js/_main/swiperClubhouse.js"></script>
-	<script src="js/_main/swiperHouse.js"></script>
+	<script src="js/cardjk/script.min.js"></script>
 
 </body>
 </html>
