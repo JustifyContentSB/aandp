@@ -1,28 +1,48 @@
+@import '../#base/pxtorem.scss';
 @import '../../../node_modules/normalize.css/normalize';
 @import '../../js/libs/swiper/swiper-bundle.min.css';
+@import '../../js/libs/jquery-range/jquery-ui.min.css';
 
-@import '../#base/pxtorem.scss';
-@import '../#base/base.scss';
+
 @import '../#base/vars.scss';
+@import '../#base/base.scss';
 @import '../#base/fonts.scss';
 @import '../#base/body.scss';
+
+
 @import '../#main/container.scss';
 @import '../#main/rate.scss';
-@import '../#main/btn.scss';
 @import '../#main/main-title.scss';
+@import '../#main/btn.scss';
 @import '../#main/header.scss';
 @import '../#main/menu.scss';
 @import '../#main/breadcrumbs.scss';
+@import '../#main/info.scss';
+@import '../#main/pro.scss';
 @import '../#main/show.scss';
 @import '../#main/property.scss';
+@import '../#main/plan.scss';
 @import '../#main/clubhouse.scss';
+@import '../#main/home.scss';
 @import '../#main/house.scss';
 @import '../#main/composition.scss';
 @import '../#main/arbat.scss';
-@import '../#main/pro.scss';
+@import '../#main/flat.scss';
+@import '../#main/apartment.scss';
+@import '../#main/catalog.scss';
+@import '../#main/offer.scss';
+@import '../#main/estate.scss';
+@import '../#main/pagination.scss';
 @import '../#main/features.scss';
+@import '../#main/info.scss';
+@import '../#main/news.scss';
+@import '../#main/owner.scss';
+@import '../#main/partners.scss';
+@import '../#main/services.scss';
+@import '../#main/address.scss';
 @import '../#main/footer.scss';
 @import '../#main/phone.scss';
 @import '../#main/overlay.scss';
 @import '../#main/swiper.scss';
-
+@import '../#main/download.scss';
+@import '../#main/request.scss';

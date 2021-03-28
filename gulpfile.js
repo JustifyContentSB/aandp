@@ -20,9 +20,19 @@ gulp.task('browserSync', function() {
     browserSync.init({
         server: {
             baseDir: "app",
-            index: 'index.html' 
+            index: 'about.html' 
         }
     });
+});
+
+//FINAl SCSS
+gulp.task('finalSCSS', function() {
+    return gulp.src('app/scss/final/final.scss')
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(autoprefixer('last 2 versions'))
+    .pipe(rename({suffix: '.min'}))
+    .pipe(gulp.dest('app/css/final'))
+    .pipe(browserSync.reload({stream: true}))
 });
 
 //INDEX SCSS
@@ -231,6 +241,7 @@ gulp.task('cardobjJS', function() {
 });
 
 gulp.task('watch', function() {
+    gulp.watch('app/scss/**/*.scss', gulp.parallel('finalSCSS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('aboutSCSS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('newsSCSS'))
     gulp.watch('app/scss/**/*.scss', gulp.parallel('servicesSCSS'))
@@ -260,5 +271,5 @@ gulp.task('default', gulp.parallel('indexSCSS', 'indexJS',
                                     'citySCSS', 'cityJS',
                                     'cardjkSCSS', 'cardjkJS',
                                     'cardobjSCSS', 'cardobjJS',
-                                    'newsJS',
+                                    'newsJS', 'finalSCSS',
                                     'browserSync', 'watch'));
