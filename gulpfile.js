@@ -20,7 +20,11 @@ gulp.task('browserSync', function() {
     browserSync.init({
         server: {
             baseDir: "app",
+<<<<<<< HEAD
             index: 'index.html' 
+=======
+            index: 'index.html'
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
         }
     });
 });
@@ -217,10 +221,15 @@ gulp.task('cardjkJS', function() {
 gulp.task('cardobjJS', function() {
     return gulp.src([
         'app/js/libs/jquery/jquery-3.5.1.min.js', 
+<<<<<<< HEAD
         'app/js/libs/swiper/swiper-bundle.min.js', 
         'app/js/_main/headerMenu.js', 
         'app/js/_main/phoneModal.js',
         'app/js/_main/dots.js',
+=======
+        'app/js/_main/headerMenu.js', 
+        'app/js/_main/phoneModal.js',
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
         'app/js/_main/swiperClubhouse.js',
         'app/js/_main/swiperHouse.js',
         ])
@@ -260,5 +269,8 @@ gulp.task('default', gulp.parallel('indexSCSS', 'indexJS',
                                     'citySCSS', 'cityJS',
                                     'cardjkSCSS', 'cardjkJS',
                                     'cardobjSCSS', 'cardobjJS',
+<<<<<<< HEAD
                                     'newsJS',
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
                                     'browserSync', 'watch'));

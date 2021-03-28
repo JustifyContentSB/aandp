@@ -5,7 +5,10 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+<<<<<<< HEAD
 @import url(../../js/libs/swiper/swiper-bundle.min.css);
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 html {
   line-height: 1.15;
   /* 1 */
@@ -459,6 +462,14 @@ html .no-scroll, body .no-scroll {
   overflow: hidden;
 }
 
+<<<<<<< HEAD
+=======
+.wrapper {
+  margin: 0 auto;
+  width: 100%;
+}
+
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 .container {
   padding: 0 10px;
   max-width: 1690px;
@@ -481,11 +492,14 @@ html .no-scroll, body .no-scroll {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+<<<<<<< HEAD
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
   font-weight: bold;
   font-size: 13px;
   line-height: 25px;
@@ -585,6 +599,7 @@ html .no-scroll, body .no-scroll {
   background-position: center;
 }
 
+<<<<<<< HEAD
 .header-index {
   height: 1px;
   min-height: 476px;
@@ -650,6 +665,8 @@ html .no-scroll, body .no-scroll {
   background-image: url("../../images/services/header-bg.jpg");
 }
 
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 .header::after {
   content: '';
   position: absolute;
@@ -662,6 +679,7 @@ html .no-scroll, body .no-scroll {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0) 80.73%, #000000 100%, rgba(0, 0, 0, 0) 100%), linear-gradient(180deg, rgba(0, 0, 0, 0.58) 0%, rgba(0, 0, 0, 0) 100%), rgba(0, 0, 0, 0.6);
 }
 
+<<<<<<< HEAD
 .header__swiper {
   position: absolute;
   left: 0;
@@ -812,6 +830,11 @@ html .no-scroll, body .no-scroll {
   position: relative;
   z-index: 1;
   height: 100%;
+=======
+.header__inner {
+  position: relative;
+  z-index: 1;
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 }
 
 .header__top {
@@ -827,7 +850,10 @@ html .no-scroll, body .no-scroll {
       -ms-flex-pack: justify;
           justify-content: space-between;
   position: relative;
+<<<<<<< HEAD
   z-index: 5;
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 }
 
 .header__top::after {
@@ -849,7 +875,11 @@ html .no-scroll, body .no-scroll {
           align-items: center;
 }
 
+<<<<<<< HEAD
 .header__top-rate.rate {
+=======
+.header__top-rate {
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
   margin-left: 30px;
   display: none;
 }
@@ -901,7 +931,10 @@ html .no-scroll, body .no-scroll {
 }
 
 .header__tel {
+<<<<<<< HEAD
   margin-left: auto;
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
   display: none;
   font-weight: 500;
   font-size: 18px;
@@ -921,11 +954,14 @@ html .no-scroll, body .no-scroll {
   height: 20px;
 }
 
+<<<<<<< HEAD
 .header__bottom {
   position: relative;
   z-index: 5;
 }
 
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 .header__bottom-realty {
   display: none;
   margin-top: 27px;
@@ -969,10 +1005,39 @@ html .no-scroll, body .no-scroll {
   width: 100%;
 }
 
+<<<<<<< HEAD
+=======
+.header__bottom-text {
+  margin-top: 40px;
+  padding: 0 25px;
+  font-size: 11px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.header__bottom-more {
+  min-width: 202px;
+  margin-top: 62px;
+  padding: 9px;
+  position: relative;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #B5A798;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 11px;
+  line-height: 19px;
+}
+
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 @media screen and (min-width: 768px) {
   .header {
     min-height: 280px;
   }
+<<<<<<< HEAD
   .header-index {
     min-height: 550px;
   }
@@ -983,33 +1048,46 @@ html .no-scroll, body .no-scroll {
     display: inline;
   }
   .header__top-rate.rate {
+=======
+  .header__top-rate {
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-left: 30px;
   }
+<<<<<<< HEAD
   .header__swiper-text {
     max-width: 640px;
     font-size: 14px;
     line-height: 130%;
   }
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 }
 
 @media screen and (min-width: 1280px) {
   .header {
     min-height: 350px;
   }
+<<<<<<< HEAD
   .header-index {
     min-height: 800px;
   }
   .header-cardobj .breadcrumbs {
     margin-top: 10px;
   }
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
   .header__top {
     padding: 25px;
     min-height: 160px;
   }
+<<<<<<< HEAD
   .header__top-rate.rate {
+=======
+  .header__top-rate {
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
     margin-left: 44px;
   }
   .header__toggle {
@@ -1040,6 +1118,7 @@ html .no-scroll, body .no-scroll {
   .header__tel {
     display: inline-block;
   }
+<<<<<<< HEAD
   .header__swiper-text {
     font-size: 16px;
     line-height: 25px;
@@ -1076,12 +1155,15 @@ html .no-scroll, body .no-scroll {
     width: 40px;
     height: 27px;
   }
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 }
 
 @media screen and (min-width: 1440px) {
   .header {
     min-height: 417px;
   }
+<<<<<<< HEAD
   .header-index {
     min-height: 900px;
   }
@@ -1117,6 +1199,15 @@ html .no-scroll, body .no-scroll {
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
   }
+=======
+  .header__top {
+    padding: 31px 38px;
+  }
+}
+
+.header {
+  background-image: url("../../images/cardobj/header-bg.jpg");
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 }
 
 .menu {
@@ -1248,7 +1339,10 @@ html .no-scroll, body .no-scroll {
 }
 
 .menu__search-label {
+<<<<<<< HEAD
   display: block;
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
   position: relative;
 }
 
@@ -1256,9 +1350,13 @@ html .no-scroll, body .no-scroll {
   content: '';
   position: absolute;
   left: 12px;
+<<<<<<< HEAD
   top: 50%;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+=======
+  top: 6px;
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
   width: 16px;
   height: 16px;
   background-image: url("../../images/icons/search.svg");
@@ -1518,6 +1616,10 @@ html .no-scroll, body .no-scroll {
   .menu__search-label::before {
     width: 21px;
     height: 21px;
+<<<<<<< HEAD
+=======
+    top: 0;
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
     left: 16px;
   }
   .menu__manage {
@@ -1658,6 +1760,10 @@ html .no-scroll, body .no-scroll {
     line-height: 32px;
   }
   .menu__search-label::before {
+<<<<<<< HEAD
+=======
+    top: -2px;
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
     left: 24px;
   }
   .menu__manage {
@@ -1824,6 +1930,19 @@ html .no-scroll, body .no-scroll {
   }
 }
 
+<<<<<<< HEAD
+=======
+.breadcrumbs {
+  display: block;
+}
+
+@media screen and (min-width: 1280px) {
+  .breadcrumbs {
+    margin-top: 10px;
+  }
+}
+
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 .clubhouse__slider {
   width: 100%;
   max-width: 1640px;
@@ -1898,7 +2017,11 @@ html .no-scroll, body .no-scroll {
 }
 
 .clubhouse__list {
+<<<<<<< HEAD
   margin-bottom: 20px;
+=======
+  margin-bottom: 30px;
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1911,7 +2034,10 @@ html .no-scroll, body .no-scroll {
 
 .clubhouse__list li {
   margin-right: 10px;
+<<<<<<< HEAD
   margin-bottom: 10px;
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 }
 
 .clubhouse__list a {
@@ -2135,7 +2261,10 @@ html .no-scroll, body .no-scroll {
 }
 
 .clubhouse__about-text {
+<<<<<<< HEAD
   max-width: 100%;
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
   margin-top: 17px;
   font-weight: 350;
   font-size: 11px;
@@ -2475,6 +2604,7 @@ html .no-scroll, body .no-scroll {
   line-height: 15px;
   text-align: center;
   border: 1px solid #FFFFFF;
+<<<<<<< HEAD
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
@@ -2482,6 +2612,8 @@ html .no-scroll, body .no-scroll {
 .show__link:hover, .show__link:focus {
   background: #fff;
   color: #212121;
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 }
 
 @media screen and (min-width: 768px) {
@@ -2541,9 +2673,12 @@ html .no-scroll, body .no-scroll {
 
 .property__type {
   min-width: 143px;
+<<<<<<< HEAD
   width: 143px;
   margin-right: 5px;
   overflow-x: hidden;
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 }
 
 .property__descr {
@@ -2571,10 +2706,13 @@ html .no-scroll, body .no-scroll {
   background: #fff;
 }
 
+<<<<<<< HEAD
 .property__more:hover::after, .property__more:focus::after {
   display: none;
 }
 
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 .property--hidden {
   display: none;
 }
@@ -2586,7 +2724,10 @@ html .no-scroll, body .no-scroll {
   }
   .property__type {
     min-width: 240px;
+<<<<<<< HEAD
     width: 240px;
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
   }
 }
 
@@ -2927,7 +3068,11 @@ html .no-scroll, body .no-scroll {
     margin-bottom: auto;
   }
   .home__btn {
+<<<<<<< HEAD
     max-width: 480px;
+=======
+    width: 480px;
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
     min-height: 60px;
     line-height: 45px;
     font-size: 20px;
@@ -3315,6 +3460,7 @@ html .no-scroll, body .no-scroll {
   .house__swiper {
     padding-left: calc((100% - 1640px)/2);
   }
+<<<<<<< HEAD
   .house__swiper--index {
     padding-left: 0;
   }
@@ -3324,6 +3470,8 @@ html .no-scroll, body .no-scroll {
   .house__swiper--index {
     padding-left: calc((100% - 1640px)/2);
   }
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 }
 
 .pro {
@@ -3431,7 +3579,10 @@ html .no-scroll, body .no-scroll {
   .pro__info {
     margin-top: 0;
     width: calc(100% - 640px);
+<<<<<<< HEAD
     max-width: 775px;
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
     min-height: 360px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3445,7 +3596,10 @@ html .no-scroll, body .no-scroll {
             align-items: flex-start;
   }
   .pro__text {
+<<<<<<< HEAD
     max-width: 100%;
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
     margin-bottom: 10px;
     font-size: 16px;
     line-height: 130%;
@@ -3650,9 +3804,12 @@ html .no-scroll, body .no-scroll {
     line-height: 21px;
     letter-spacing: 0.11rem;
   }
+<<<<<<< HEAD
   .features-city {
     margin-top: 73px;
   }
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
   .features__list {
     margin-top: 55px;
   }
@@ -4014,6 +4171,7 @@ html .no-scroll, body .no-scroll {
   display: block;
   background: rgba(0, 0, 0, 0.5);
 }
+<<<<<<< HEAD
 
 .swiper-wrapper {
   -webkit-box-sizing: border-box;
@@ -4027,3 +4185,5 @@ html .no-scroll, body .no-scroll {
 .swiper-button-next.swiper-button-disabled {
   pointer-events: auto;
 }
+=======
+>>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
