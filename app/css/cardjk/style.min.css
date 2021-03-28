@@ -2070,11 +2070,7 @@ html .no-scroll, body .no-scroll {
 }
 
 .clubhouse__list {
-<<<<<<< HEAD
   margin-bottom: 20px;
-=======
-  margin-bottom: 30px;
->>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
   display: none;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -2087,10 +2083,7 @@ html .no-scroll, body .no-scroll {
 
 .clubhouse__list li {
   margin-right: 10px;
-<<<<<<< HEAD
   margin-bottom: 10px;
-=======
->>>>>>> 4c7c84f1f58a2234bfae45fa303dc363e79221a8
 }
 
 .clubhouse__list a {
