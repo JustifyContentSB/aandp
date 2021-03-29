@@ -1,10 +1,10 @@
 .breadcrumbs {
 	width: auto;
-	margin-top: 14px;
-	padding-left: 10px;
+	margin-top: size(14);
+	padding-left: size(10);
 	font-weight: 300;
-	font-size: 11px;
-	line-height: 12px;
+	font-size: size(11);
+	line-height: size(12);
 	white-space: nowrap;
 	text-align: center;
 	overflow-x: scroll;
@@ -16,8 +16,8 @@
 	}
 	li {
 		display: inline-block;
-		margin-right: 14px;
-		padding-right: 17px;
+		margin-right: size(14);
+		padding-right: size(17);
 		position: relative;
 		&::after {
 			content: url('../../images/icons/arrow-right.svg');
@@ -27,7 +27,7 @@
 		}
 		&:last-child {
 			margin-right: 0;
-			padding-right: 10px;
+			padding-right: size(10);
 			&::after {
 				display: none;
 			}
@@ -41,7 +41,7 @@
 			right: 0;
 			left: 0;
 			bottom: 0;
-			height: 1px;
+			height: size(1);
 			background: #fff;
 			display: none;
 		}
@@ -56,8 +56,8 @@
 
 @media screen and(min-width: 768px) {
 	.breadcrumbs {
-		margin-top: 30px;
-		font-size: 12px;
+		margin-top: size(30);
+		font-size: size(12);
 		line-height: 120%;
 	}
 }

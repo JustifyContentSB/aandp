@@ -1,48 +1,48 @@
 .offer {
-	margin-top: 30px;
+	margin-top: size(30);
 	font-weight: 300;
-	font-size: 12px;
-	line-height: 18px;
+	font-size: size(12);
+	line-height: size(18);
 	&__title {
 		font-weight: bold;
-		font-size: 20px;
-		line-height: 21px;
+		font-size: size(20);
+		line-height: size(21);
 	}
 	&__text {
-		margin-top: 15px;
+		margin-top: size(15);
 		&-dekstop {
 			display: none;
 		}
 	}
 	&__form {
-		margin-top: 15px;
+		margin-top: size(15);
 		input {
 			display: block;
-			padding: 10px;
+			padding: size(10);
 			width: 100%;
 			background: transparent;
-			border: 1px solid #969696;
+			border: size(1) solid #969696;
 			font-weight: 350;
-			font-size: 14px;
-			line-height: 28px;
+			font-size: size(14);
+			line-height: size(28);
 			color: #fff;
 			&::placeholder {
 				color: $brown;
 				text-align: center;
 				font-weight: 350;
-				font-size: 14px;
-				line-height: 28px;
+				font-size: size(14);
+				line-height: size(28);
 			}
 		}
 	}
 	&__btn {
-		margin-top: 10px;
+		margin-top: size(10);
 	}
 	&__agree {
-		margin-top: 15px;
+		margin-top: size(15);
 		font-weight: 350;
-		font-size: 10px;
-		line-height: 14px;
+		font-size: size(10);
+		line-height: size(14);
 		cursor: pointer;
 		display: flex;
 		flex-wrap: wrap;
@@ -50,20 +50,20 @@
 		align-items: center;
 		&-checkbox {
 			display: inline-block;
-			min-width: 25px;
-			height: 25px;
-			border: 1px solid #4E4E4E;
+			min-width: size(25);
+			height: size(25);
+			border: size(1) solid #4E4E4E;
 			position: relative;
 			svg {
 				opacity: 0;
 				position: absolute;
-				top: 3px;
-				left: 4px;
+				top: size(3);
+				left: size(4);
 			}
 		}
 		&-text {
 			display: block;
-			width: calc(100% - 41px);
+			width: calc(100% - 2.563rem);
 			a {
 				color: $brown;
 			}
@@ -87,8 +87,8 @@
 		}
 		&__btn {
 			margin-top: 0;
-			font-size: 14px;
-			line-height: 28px;
+			font-size: size(14);
+			line-height: size(28);
 		}
 		&__form {
 			input {
@@ -101,20 +101,20 @@
 @media screen and(min-width: 991px) {
 	.offer {
 		&__inner {
-			margin-top: 20px;
+			margin-top: size(20);
 			display: flex;
 			justify-content: space-between;
 			align-items: flex-start;
 			flex-wrap: wrap;
 		}
 		&__text {
-			width: calc(50% - 15px);
-			max-width: 744px;
+			width: calc(50% - 0.938rem);
+			max-width: size(744);
 			margin-top: 0;
 		}
 		&__form {
-			width: calc(50% - 15px);
-			max-width: 810px;
+			width: calc(50% - 0.938rem);
+			max-width: size(810);
 			margin-top: 0;
 		}
 	}
@@ -122,31 +122,31 @@
 
 @media screen and(min-width: 1280px) {
 	.offer {
-		margin-top: 60px;
-		font-size: 16px;
+		margin-top: size(60);
+		font-size: size(16);
 		line-height: 130%;
 		font-weight: 350;
 		&__title {
-			font-size: 30px;
+			font-size: size(30);
 			line-height: 120%;
 		}
 		&__form {
 			input {
-				padding: 15px 26px;
-				font-size: 16px;
+				padding: size(15) size(26);
+				font-size: size(16);
 				line-height: 130%;
 				&::placeholder {
-					font-size: 16px;
+					font-size: size(16);
 				}
 			}
 		}
 		&__btn {
-			font-size: 16px;
+			font-size: size(16);
 		}
 		&__agree {
-			margin-top: 20px;
-			font-size: 13px;
-			line-height: 25px;
+			margin-top: size(20);
+			font-size: size(13);
+			line-height: size(25);
 		}
 		&__text {
 			&-dekstop {
@@ -158,27 +158,27 @@
 
 @media screen and(min-width: 1440px) {
 	.offer {
-		margin-top: 100px;
-		font-size: 18px;
-		line-height: 28px;
+		margin-top: size(100);
+		font-size: size(18);
+		line-height: size(28);
 		&__title {
-			font-size: 55px;
-			line-height: 71px;
+			font-size: size(55);
+			line-height: size(71);
 		}
 		&__inner {
-			margin-top: 43px;
+			margin-top: size(43);
 		}
 		&__form {
 			input {
-				font-size: 18px;
+				font-size: size(18);
 				&::placeholder {
-					font-size: 18px;
+					font-size: size(18);
 				}
 			}
 		}
 		&__btn {
-			min-width: 253px;
-			font-size: 18px;
+			min-width: size(253);
+			font-size: size(18);
 		}
 	}
 }

@@ -1,25 +1,25 @@
 .house {
-	margin-top: 30px;
+	margin-top: size(30);
 	&__header {
-		padding-top: 30px;
+		padding-top: size(30);
 		position: relative;
 		&::before {
 			content: '';
 			position: absolute;
-			left: 10px;
-			right: 10px;
+			left: size(10);
+			right: size(10);
 			top: 0;
-			height: 1px;
+			height: size(1);
 			background: #303030;
 		}
 		&-title {
 			font-weight: 300;
-			font-size: 16px;
-			line-height: 17px; 
+			font-size: size(16);
+			line-height: size(17); 
 		}
 		&-link {
 			font-weight: 350;
-			font-size: 12px;
+			font-size: size(12);
 			line-height: 120%;
 			color: #808080;
 			position: relative;
@@ -36,7 +36,7 @@
 				bottom: 0;
 				left: 0;
 				right: 0;
-				height: 1px;
+				height: size(1);
 				background: #808080;
 			}
 		}
@@ -47,25 +47,25 @@
 		.swiper {
 			&-button {
 				&-prev {
-					width: 40px;
-					height: 27px;
+					width: size(40);
+					height: size(27);
 					position: static;
 					transform: rotate(180deg);
 					&::after {
-						width: 40px;
-						height: 27px;
+						width: size(40);
+						height: size(27);
 						content: url('../../images/icons/swiper-btn.svg');
 						font-size: 0;
 					}
 				}
 				&-next {
-					margin-left: 40px;
-					width: 40px;
-					height: 27px;
+					margin-left: size(40);
+					width: size(40);
+					height: size(27);
 					position: static;
 					&::after {
-						width: 40px;
-						height: 27px;
+						width: size(40);
+						height: size(27);
 						content: url('../../images/icons/swiper-btn.svg');
 						font-size: 0;
 					}
@@ -74,12 +74,12 @@
 		}
 	}
 	&__swiper {
-		padding-left: 10px;
-		margin-top: 10px;
+		padding-left: size(10);
+		margin-top: size(10);
 	}
 	&__slide {
 		width: 96%;
-		max-width: 630px;
+		max-width: size(630);
 		overflow: hidden;
 		position: relative;
 		box-sizing: border-box;
@@ -108,7 +108,7 @@
 	}
 	&__info {
 		&-top {
-			padding: 16px 18px;
+			padding: size(16) size(18);
 			position: absolute;
 			z-index: 10;
 			left: 0;
@@ -116,38 +116,38 @@
 			width: 100%;
 			&__price {
 				font-weight: bold;
-				font-size: 14px;
-				line-height: 14px;
+				font-size: size(14);
+				line-height: size(14);
 			}
 			&__size {
 				font-weight: 400;
-				font-size: 9px;
-				line-height: 14px;
+				font-size: size(9);
+				line-height: size(14);
 			}
 			&__metre {
 				font-weight: 500;
-				font-size: 11px;
-				line-height: 14px;
+				font-size: size(11);
+				line-height: size(14);
 			}
 		}
 		&-bottom {
-			padding: 10px 18px;
+			padding: size(10) size(18);
 			position: absolute;
 			z-index: 10;
 			bottom: 0;
 			left: 0;
 			width: 100%;
 		    background: rgba(0, 0, 0, 0.5);
-			backdrop-filter: blur(5.17241px);
+			backdrop-filter: blur(size(5));
 			a {
 				display: inline-block;
 			}
 			&__title {
 				display: inline-block;
-				max-width: 233px;
+				max-width: size(233);
 				font-weight: 500;
-				font-size: 11px;
-				line-height: 15px;
+				font-size: size(11);
+				line-height: size(15);
 				text-transform: uppercase;
 			}
 		}
@@ -157,50 +157,50 @@
 @media screen and(min-width: 768px) {
 	.house {
 		&__header {
-			margin-bottom: 20px;
+			margin-bottom: size(20);
 			display: flex;
 			align-items: flex-end;
 			flex-wrap: wrap;
 			&::before {
-				left: 15px;
-				right: 15px;
+				left: size(15);
+				right: size(15);
 			}
 			&-title {
-				margin-right: 20px;
-				font-size: 20px;
+				margin-right: size(20);
+				font-size: size(20);
 				line-height: 120%;
 			}
 			&-link {
-				margin-bottom: 3px;
-				font-size: 14px;
+				margin-bottom: size(3);
+				font-size: size(14);
 			}
 		}
 		&__swiper {
-			padding-left: 15px;
+			padding-left: size(15);
 		}
 		&__info {
 			&-top {
-				padding: 20px 22px;
+				padding: size(20) size(22);
 				&__price {
-					font-size: 18px;
+					font-size: size(18);
 					line-height: 120%;
 				}
 				&__size {
-					margin-top: 5px;
-					font-size: 11px;
+					margin-top: size(5);
+					font-size: size(11);
 					line-height: 120%;
 				}
 				&__metre {
-					margin-top: 5px;
-					font-size: 11px;
+					margin-top: size(5);
+					font-size: size(11);
 					line-height: 120%;
 				}
 			}
 			&-bottom {
-				padding: 20px 22px;
+				padding: size(20) size(22);
 				&__title {
-					max-width: 310px;
-					font-size: 13px;
+					max-width: size(310);
+					font-size: size(13);
 					line-height: 120%;
 				}
 			}
@@ -211,33 +211,33 @@
 @media screen and(min-width: 991px) {
 	.house {
 		&__header {
-			margin-bottom: 25px;
+			margin-bottom: size(25);
 			&-title {
-				font-size: 24px;
+				font-size: size(24);
 			}
 			&-link {
-				margin-bottom: 2px;
-				font-size: 16px;
+				margin-bottom: size(2);
+				font-size: size(16);
 			}
 		}
 		&__info {
 			&-top {
-				padding: 22px 24px;
+				padding: size(22) size(24);
 				&__price {
-					font-size: 22px;
+					font-size: size(22);
 				}
 				&__size {
-					font-size: 13px;
+					font-size: size(13);
 				}
 				&__metre {
-					font-size: 13px;
+					font-size: size(13);
 				}
 			}
 			&-bottom {
-				padding: 22px 20px;
+				padding: size(22) size(20);
 				&__title {
-					max-width: 355px;
-					font-size: 15px;
+					max-width: size(355);
+					font-size: size(15);
 				}
 			}
 		}
@@ -246,54 +246,54 @@
 
 @media screen and(min-width: 1280px) {
 	.house {
-		margin-top: 60px;
+		margin-top: size(60);
 		&__header {
 			padding-top: 0;
-			margin-bottom: 30px;
+			margin-bottom: size(30);
 			&::before {
 				display: none;
-				left: 25px;
-    			right: 25px;
+				left: size(25);
+    			right: size(25);
 			}
 			&--line {
-				padding-top: 40px;
+				padding-top: size(40);
 				&::before {
 					display: block;
 				}
 			}
 			&-title {
-				margin-right: 30px;
-				font-size: 28px;
+				margin-right: size(30);
+				font-size: size(28);
 				font-weight: 500;
 			}
 			&-link {
-				margin-bottom: 4px;
-				font-size: 16px;
+				margin-bottom: size(4);
+				font-size: size(16);
 			}
 		}
 		&__btns {
 			display: flex;
 		}
 		&__swiper {
-			padding-left: 25px;
+			padding-left: size(25);
 		}
 		&__info {
 			&-top {
 				&__price {
-					font-size: 26px;
+					font-size: size(26);
 				}
 				&__size {
-					font-size: 15px;
+					font-size: size(15);
 				}
 				&__metre {
-					font-size: 15px;
+					font-size: size(15);
 				}
 			}
 			&-bottom {
 				&__title {
-					max-width: 500px;
-					font-size: 18px;
-					line-height: 20px;
+					max-width: size(500);
+					font-size: size(18);
+					line-height: size(20);
 					font-weight: 350;
 				}
 			}
@@ -304,35 +304,35 @@
 @media screen and(min-width: 1366px) {
 	.house {
 		&__header {
-			margin-bottom: 45px;
+			margin-bottom: size(45);
 			&--line {
-				margin-bottom: 70px;
+				margin-bottom: size(70);
 			}
 			&-title {
-				margin-right: 38px;
-				font-size: 40px;
+				margin-right: size(38);
+				font-size: size(40);
 			}
 			&-link {
-				margin-bottom: 6px;
-				font-size: 18px;
+				margin-bottom: size(6);
+				font-size: size(18);
 			}
 		}
 		&__info {
 			&-top {
-				padding: 28px 26px;
+				padding: size(28) size(26);
 				&__price {
-					font-size: 39px;
+					font-size: size(39);
 				}
 				&__size {
-					font-size: 18px;
+					font-size: size(18);
 				}
 				&__metre {
-					margin-top: 15px;
-					font-size: 18px;
+					margin-top: size(15);
+					font-size: size(18);
 				}
 			}
 			&-bottom {
-				padding: 20px 22px;
+				padding: size(20) size(22);
 			}
 		}
 	}
@@ -340,10 +340,10 @@
 
 @media screen and(min-width: 1440px) {
 	.house {
-		margin-top: 100px;
+		margin-top: size(100);
 		&__header {
 			&--line {
-				padding-top: 60px;
+				padding-top: size(60);
 				&::before {
 					display: block;
 				}
@@ -355,7 +355,7 @@
 @media screen and(min-width: 1730px) {
 	.house {
 		&__swiper {
-			padding-left: calc((100% - 1640px)/2);
+			padding-left: calc((100% - 102.5rem)/2);
 			&--index {
 				padding-left: 0;
 			}
@@ -367,7 +367,7 @@
 	.house {
 		&__swiper {
 			&--index {
-				padding-left: calc((100% - 1640px)/2);
+				padding-left: calc((100% - 102.5rem)/2);
 			}
 		}
 	}

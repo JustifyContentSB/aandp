@@ -1,12 +1,12 @@
 .catalog {
-	margin-top: 30px;
+	margin-top: size(30);
 	font-weight: 300;
-	font-size: 12px;
-	line-height: 18px;
+	font-size: size(12);
+	line-height: size(18);
 	&__title {
 		font-weight: bold;
-		font-size: 20px;
-		line-height: 21px;
+		font-size: size(20);
+		line-height: size(21);
 		letter-spacing: 0.03rem;
 	}
 	&__img {
@@ -17,21 +17,21 @@
 			}
 		}
 		&-tel {
-			margin-top: 15px;
+			margin-top: size(15);
 			img {
 				margin: 0 auto;
 				width: 48%;
-				min-width: 145px;
-				max-width: 170px;
+				min-width: size(145);
+				max-width: size(170);
 				height: auto;
 			}
 		}
 	}
 	&__text {
-		margin-top: 7px;
+		margin-top: size(7);
 	}
 	&__btn {
-		margin-top: 17px;
+		margin-top: size(17);
 	}
 	&__descr {
 		display: none;
@@ -42,8 +42,8 @@
 	.catalog {
 		&__img {
 			&-dekstop {
-				max-width: 300px;
-				width: 300px;
+				max-width: size(300);
+				width: size(300);
 				display: block;
 			}
 			&-tel {
@@ -57,18 +57,18 @@
 			flex-wrap: wrap;
 		}
 		&__info {
-			width: calc(100% - 320px);
-			min-height: 270px;
+			width: calc(100% - 20rem);
+			min-height: size(270);
 			display: flex;
 			flex-direction: column;
 		}
 		&__text {
-			margin-top: 15px;
+			margin-top: size(15);
 		}
 		&__btn {
-			max-width: 351px;
-			margin-top: 20px;
-			margin-bottom: 10px;
+			max-width: size(351);
+			margin-top: size(20);
+			margin-bottom: size(10);
 		}
 		&__descr {
 			margin-top: auto;
@@ -81,40 +81,40 @@
 
 @media screen and(min-width: 1280px) {
 	.catalog {
-		margin-top: 60px;
-		font-size: 16px;
+		margin-top: size(60);
+		font-size: size(16);
 		font-weight: 350;
 		&__title {
-			font-size: 30px;
+			font-size: size(30);
 			line-height: 130%;
 		}
 		&__img {
 			&-dekstop {
-				max-width: 430px;
-				width: 430px;
+				max-width: size(430);
+				width: size(430);
 			}
 		}
 		&__info {
-			width: calc(100% - 530px);
-			min-height: 370px;
+			width: calc(100% - 33.125rem);
+			min-height: size(370);
 		}
 		&__text {
-			margin-top: 30px;
+			margin-top: size(30);
 		}
 		&__btn {
-			margin-top: 42px;
+			margin-top: size(42);
 		}
 	}
 }
 
 @media screen and(min-width: 1440px) {
 	.catalog {
-		margin-top: 100px;
-		font-size: 18px;
+		margin-top: size(100);
+		font-size: size(18);
 		line-height: 156%;
 		&__title {
-			font-size: 55px;
-			line-height: 71px;
+			font-size: size(55);
+			line-height: size(71);
 		}
 	}
 }

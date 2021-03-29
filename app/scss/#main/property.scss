@@ -1,10 +1,10 @@
 .property {
 	font-weight: 300;
-	font-size: 11px;
-	line-height: 16px;
+	font-size: size(11);
+	line-height: size(16);
 	letter-spacing: 0.05rem;
 	li {
-		margin-bottom: 10px;
+		margin-bottom: size(10);
 		display: flex;
 		align-items: flex-start;
 		&:last-child {
@@ -15,20 +15,20 @@
 		}
 	}
 	&__type {
-		min-width: 143px;
-		width: 143px;
-		margin-right: 5px;
+		min-width: size(143);
+		width: size(143);
+		margin-right: size(5);
 		overflow-x: hidden;
 	}
 	&__descr {
 		font-weight: 400;
 	}
 	&__more {
-		margin-top: 20px;
+		margin-top: size(20);
 		display: inline-block;
 		font-weight: 350;
-		font-size: 13px;
-		line-height: 13px;
+		font-size: size(13);
+		line-height: size(13);
 		text-align: justify;
 		letter-spacing: 0.1rem;
 		position: relative;
@@ -38,7 +38,7 @@
 			left: 0;
 			right: 0;
 			bottom: 0;
-			height: 1px;
+			height: size(1);
 			background: #fff;
 		}
 		&:hover,
@@ -55,11 +55,11 @@
 
 @media screen and(min-width: 768px) {
 	.property {
-		font-size: 15px;
+		font-size: size(15);
 		line-height: 120%;
 		&__type {
-			min-width: 240px;
-			width: 240px;
+			min-width: size(240);
+			width: size(240);
 		}
 	}
 }
@@ -73,9 +73,9 @@
 			align-items: flex-start;
 		}
 		&__more {
-			margin-top: 20px;
-			font-size: 16px;
-			line-height: 26px;
+			margin-top: size(20);
+			font-size: size(16);
+			line-height: size(26);
 			font-weight: bold;
 			display: none;
 		}
@@ -83,7 +83,7 @@
 			display: block;
 		}
 		li {
-			margin-bottom: 20px;
+			margin-bottom: size(20);
 			letter-spacing: 0.1rem;
 			&.property__none {
 				display: flex;

@@ -38,7 +38,7 @@ gulp.task('finalSCSS', function() {
 //INDEX SCSS
 gulp.task('indexSCSS', function() {
     return gulp.src('app/scss/index/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/index'))
@@ -48,7 +48,7 @@ gulp.task('indexSCSS', function() {
 //ABOUT SCSS
 gulp.task('aboutSCSS', function() {
     return gulp.src('app/scss/about/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/about'))
@@ -58,7 +58,7 @@ gulp.task('aboutSCSS', function() {
 //NEWS SCSS
 gulp.task('newsSCSS', function() {
     return gulp.src('app/scss/news/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/news'))
@@ -68,7 +68,7 @@ gulp.task('newsSCSS', function() {
 //SERVICES SCSS
 gulp.task('servicesSCSS', function() {
     return gulp.src('app/scss/services/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/services'))
@@ -78,7 +78,7 @@ gulp.task('servicesSCSS', function() {
 //PARTNERS SCSS
 gulp.task('partnersSCSS', function() {
     return gulp.src('app/scss/partners/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/partners'))
@@ -88,7 +88,7 @@ gulp.task('partnersSCSS', function() {
 //CONTACTS SCSS
 gulp.task('contactsSCSS', function() {
     return gulp.src('app/scss/contacts/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/contacts'))
@@ -98,7 +98,7 @@ gulp.task('contactsSCSS', function() {
 //OWNER SCSS
 gulp.task('ownerSCSS', function() {
     return gulp.src('app/scss/owner/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/owner'))
@@ -108,7 +108,7 @@ gulp.task('ownerSCSS', function() {
 //BUILDER SCSS
 gulp.task('builderSCSS', function() {
     return gulp.src('app/scss/builder/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/builder'))
@@ -118,7 +118,7 @@ gulp.task('builderSCSS', function() {
 //CITY SCSS
 gulp.task('citySCSS', function() {
     return gulp.src('app/scss/city/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/city'))
@@ -128,7 +128,7 @@ gulp.task('citySCSS', function() {
 //CARDJK SCSS
 gulp.task('cardjkSCSS', function() {
     return gulp.src('app/scss/cardjk/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/cardjk'))
@@ -138,7 +138,7 @@ gulp.task('cardjkSCSS', function() {
 //CARDOBJ SCSS
 gulp.task('cardobjSCSS', function() {
     return gulp.src('app/scss/cardobj/style.scss')
-    .pipe(sass({outputStyle: 'expanded'}))
+    .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer('last 2 versions'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css/cardobj'))
@@ -155,6 +155,9 @@ gulp.task('indexJS', function() {
         'app/js/_main/swiperApartment.js',
         'app/js/_main/swiperFlatIndex.js',
         'app/js/_main/swiperHouse.js',
+        'app/js/_main/swiperIndexheader.js',
+        'app/js/_main/requestModal.js',
+        'app/js/_main/downloadModal.js',
         ])
     .pipe(concat('script.min.js'))
     // .pipe(uglify())
@@ -182,6 +185,7 @@ gulp.task('newsJS', function() {
         'app/js/_main/headerMenu.js', 
         'app/js/_main/phoneModal.js',
         'app/js/_main/infoList.js',
+        'app/js/_main/requestModal.js',
         ])
     .pipe(concat('script.min.js'))
     // .pipe(uglify())
@@ -198,6 +202,8 @@ gulp.task('cityJS', function() {
         'app/js/_main/headerMenu.js', 
         'app/js/_main/phoneModal.js',
         'app/js/_main/estate.js',
+        'app/js/_main/requestModal.js',
+        'app/js/_main/downloadModal.js',
         ])
     .pipe(concat('script.min.js'))
     // .pipe(uglify())
@@ -216,6 +222,7 @@ gulp.task('cardjkJS', function() {
         'app/js/_main/compositionTable.js',
         'app/js/_main/swiperClubhouse.js',
         'app/js/_main/swiperHouse.js',
+        'app/js/_main/requestModal.js',
         ])
     .pipe(concat('script.min.js'))
     // .pipe(uglify())
@@ -233,6 +240,8 @@ gulp.task('cardobjJS', function() {
         'app/js/_main/dots.js',
         'app/js/_main/swiperClubhouse.js',
         'app/js/_main/swiperHouse.js',
+        'app/js/_main/requestModal.js',
+        'app/js/_main/downloadModal.js',
         ])
     .pipe(concat('script.min.js'))
     // .pipe(uglify())

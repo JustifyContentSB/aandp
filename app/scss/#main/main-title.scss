@@ -1,15 +1,15 @@
 .main-title {
-	margin-top: 23px;
-	padding: 0 10px;
+	margin-top: size(23);
+	padding: 0 size(10);
 	font-weight: 350;
-	font-size: 22px;
-	line-height: 27px;
+	font-size: size(22);
+	line-height: size(27);
 	text-align: center;
 }
 
 @media screen and(min-width: 768px) {
 	.main-title {
-		font-size: 40px;
+		font-size: size(40);
 		line-height: 120%;
 		br {
 			display: none;
@@ -19,7 +19,7 @@
 
 @media screen and(min-width: 1280px) {
 	.main-title {
-		font-size: 48px;
+		font-size: size(48);
 		line-height: 120%;
 		font-weight: 300;
 	}
@@ -27,8 +27,8 @@
 
 @media screen and(min-width: 1440px) {
 	.main-title {
-		margin-top: 30px;
-		font-size: 63px;
-		line-height: 100px;
+		margin-top: size(30);
+		font-size: size(63);
+		line-height: size(100);
 	}
 }

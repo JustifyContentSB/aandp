@@ -19,39 +19,39 @@
 		left: 0;
 	}
 	&__inner {
-		max-width: 1584px;
-		padding: 0 22px;
-		padding-bottom: 10px;
+		max-width: size(1584);
+		padding: 0 size(22);
+		padding-bottom: size(10);
 		margin: 0 auto;
 	}
 	&__top {
-		padding: 22px 0;
+		padding: size(22) 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		border-bottom: 1px solid rgba(#fff, 0.3);
+		border-bottom: size(1) solid rgba(#fff, 0.3);
 	}
 	&__close {
 		font-weight: 500;
-		font-size: 13px;
-		line-height: 17px;
+		font-size: size(13);
+		line-height: size(17);
 		text-transform: uppercase;
 		display: flex;
 		align-items: center;
 		&-icon {
 			display: inline-block;
-			margin-right: 9px;
-			width: 22px;
-			height: 22px;
+			margin-right: size(9);
+			width: size(22);
+			height: size(22);
 			position: relative;
 			&::before,
 			&::after {
 				content: '';
 				position: absolute;
-				top: 10px;
+				top: size(10);
 				left: 0;
 				width: 100%;
-				height: 1px;
+				height: size(1);
 				background: #fff;
 			}
 			&::before {
@@ -63,22 +63,22 @@
 		}
 	}
 	&__middle {
-		margin-top: 20px;
+		margin-top: size(20);
 	}
 	&__search {
 		input {
 			width: 100%;
-			padding: 12px;
-			padding-left: 40px;
-			border: 1px solid rgba(255, 255, 255, 0.3);
+			padding: size(12);
+			padding-left: size(40);
+			border: size(1) solid rgba(255, 255, 255, 0.3);
 			background: transparent;
 			font-weight: 300;
-			font-size: 12px;
-			line-height: 15px;
+			font-size: size(12);
+			line-height: size(15);
 			color: #fff;
 			&::placeholder {
-				font-size: 12px;
-				line-height: 15px;
+				font-size: size(12);
+				line-height: size(15);
 			}
 		}
 		&-label {
@@ -87,11 +87,11 @@
 			&::before {
 				content: '';
 				position: absolute;
-				left: 12px;
+				left: size(12);
 				top: 50%;
 				transform: translateY(-50%);
-				width: 16px;
-				height: 16px;
+				width: size(16);
+				height: size(16);
 				background-image: url('../../images/icons/search.svg');
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -99,22 +99,22 @@
 		}
 	}
 	&__manage {
-		margin-top: 22px;
+		margin-top: size(22);
 	}
 	&__nav {
 		font-weight: bold;
-		font-size: 13px;
-		line-height: 20px;
+		font-size: size(13);
+		line-height: size(20);
 		&-list {
-			height: 144px; 
-			max-width: 255px;
+			height: size(144); 
+			max-width: size(255);
 			display: flex;
 			flex-direction: column;
 			align-items: flex-start;
 			justify-content: space-between;
 			flex-wrap: wrap;
 			li {
-				margin-bottom: 16px;
+				margin-bottom: size(16);
 			}
 			a {
 				position: relative;
@@ -124,7 +124,7 @@
 					bottom: 0;
 					right: 0;
 					width: 0;
-					height: 1px;
+					height: size(1);
 					background: #fff;
 					transition: all .3s ease;
 				}
@@ -142,22 +142,22 @@
 	&__user {
 		display: none;
 		font-weight: bold;
-		font-size: 15px;
-		line-height: 30px;
+		font-size: size(15);
+		line-height: size(30);
 		color: $brown;
 	}
 	&__list {
-		margin-top: 10px;
-		padding-top: 28px;
-		border-top: 1px solid rgba(255, 255, 255, 0.3);
+		margin-top: size(10);
+		padding-top: size(28);
+		border-top: size(1) solid rgba(255, 255, 255, 0.3);
 	}
 	&__realty {
 		font-weight: 500;
-		font-size: 12px;
-		line-height: 15px;
+		font-size: size(12);
+		line-height: size(15);
 		text-transform: uppercase;
 		li {
-			margin-bottom: 17px;
+			margin-bottom: size(17);
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -170,7 +170,7 @@
 				bottom: 0;
 				right: 0;
 				width: 0;
-				height: 1px;
+				height: size(1);
 				background: #fff;
 				transition: all .3s ease;
 			}
@@ -185,13 +185,13 @@
 		}
 	}
 	&__application {
-		margin-top: 36px;
+		margin-top: size(36);
 		font-weight: bold;
-		font-size: 12px;
-		line-height: 25px;
+		font-size: size(12);
+		line-height: size(25);
 		text-transform: uppercase;
 		li {
-			margin-bottom: 7px;
+			margin-bottom: size(7);
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -199,9 +199,9 @@
 		a {
 			display: inline-block;
 			text-align: center;
-			padding: 7px;
+			padding: size(7);
 			width: 100%;
-			border: 1px solid #B5A798;
+			border: size(1) solid #B5A798;
 			&:hover,
 			&:focus {
 				background: #fff;
@@ -210,18 +210,18 @@
 		}
 	}
 	&__text {
-		margin-top: 26px;
+		margin-top: size(26);
 		font-weight: 300;
-		font-size: 12px;
-		line-height: 18px;
+		font-size: size(12);
+		line-height: size(18);
 	}
 	&__bottom {
-		margin-top: 27px;
+		margin-top: size(27);
 	}
 	&__tel {
 		font-weight: 300;
-		font-size: 25px;
-		line-height: 32px;
+		font-size: size(25);
+		line-height: size(32);
 		transition: all .3s ease;
 		&:hover,
 		&:focus {
@@ -229,21 +229,21 @@
 		}
 	}
 	&__estate {
-		max-width: 280px;
-		padding-top: 38px;
-		padding-bottom: 15px;
-		height: 215px;
-		font-size: 13px;
-		line-height: 17px;
+		max-width: size(280);
+		padding-top: size(38);
+		padding-bottom: size(15);
+		height: size(215);
+		font-size: size(13);
+		line-height: size(17);
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
 		&-wrapper {
-			margin-top: 30px;
-			border-top: 1px solid rgba(255, 255, 255, 0.3);
+			margin-top: size(30);
+			border-top: size(1) solid rgba(255, 255, 255, 0.3);
 		}
 		li {
-			margin-bottom: 16px;
+			margin-bottom: size(16);
 		}
 		a {
 			position: relative;
@@ -253,7 +253,7 @@
 				bottom: 0;
 				right: 0;
 				width: 0;
-				height: 1px;
+				height: size(1);
 				background: #fff;
 				transition: all .3s ease;
 			}
@@ -283,57 +283,57 @@
 @media screen and(min-width: 1280px) {
 	.menu {
 		&__middle {
-			margin-top: 50px;
+			margin-top: size(50);
 		}
 		&__search {
 			input {
-				min-height: 58px;
-				padding: 15px;
-				padding-left: 55px;
-				font-size: 18px;
-				line-height: 26px;
+				min-height: size(58);
+				padding: size(15);
+				padding-left: size(55);
+				font-size: size(18);
+				line-height: size(26);
 				&::placeholder {
-					font-size: 18px;
-					line-height: 26px;
+					font-size: size(21);
+					line-height: size(26);
 				}
 			}
 			&-label {
 				&::before {
-					width: 21px;
-					height: 21px;
-					left: 16px;
+					width: size(21);
+					height: size(21);
+					left: size(16);
 				}
 			}
 		}
 		&__manage {
-			margin-top: 40px;
+			margin-top: size(40);
 			display: flex;
 			align-items: flex-start;
 			justify-content: space-between;
 			flex-wrap: wrap;
 		}
 		&__nav {
-			font-size: 15px;
-			line-height: 30px;
+			font-size: size(15);
+			line-height: size(30);
 			&-list {
-				max-width: 1000px;
+				max-width: size(1000);
 				height: auto;
 				flex-direction: row;
 				justify-content: flex-start;
 				li {
-					margin-right: 30px;
+					margin-right: size(30);
 				}
 			}
 		}
 		&__user {
 			display: block;
 			li {
-				margin-bottom: 10px;
+				margin-bottom: size(10);
 			}
 		}
 		&__list {
 			padding-top: 0;
-			margin-top: 30px;
+			margin-top: size(30);
 			display: flex;
 			flex-direction: column;
 			border-top: 0;
@@ -344,23 +344,23 @@
 			display: flex;
 			flex-wrap: wrap;
 			li {
-				margin-right: 35px;
+				margin-right: size(35);
 			}
 			a {
-				padding: 12px 20px;
-				min-width: 260px;
+				padding: size(12) size(20);
+				min-width: size(260);
 			}
 		}
 		&__realty {
-			margin-top: 50px;
-			font-size: 16px;
+			margin-top: size(50);
+			font-size: size(16);
 			li {
-				margin-bottom: 25px;
+				margin-bottom: size(25);
 			}
 		}
 		&__text {
-			margin-top: 50px;
-			font-size: 16px;
+			margin-top: size(50);
+			font-size: size(16);
 			line-height: 140%;
 		}
 		&__estate {
@@ -369,17 +369,17 @@
 			height: auto;
 			flex-direction: row;
 			flex-wrap: wrap;
-			font-size: 15px;
-			line-height: 19px;
+			font-size: size(15);
+			line-height: size(19);
 			&-wrapper {
-				padding: 30px 0;
+				padding: size(30) 0;
 			}
 			li {
-				margin-right: 20px;
+				margin-right: size(20);
 			}
 		}
 		&__bottom {
-			margin-top: 50px;
+			margin-top: size(50);
 		}
 	}
 }
@@ -388,95 +388,95 @@
 	.menu {
 		&__close {
 			&-icon {
-				margin-right: 16px;
+				margin-right: size(16);
 			}
 		}
 		&__middle {
-			margin-top: 76px;
+			margin-top: size(76);
 		}
 		&__search {
 			input {
-				min-height: 65px;
-				padding-left: 72px;
-				font-size: 25px;
-				line-height: 32px;
+				min-height: size(65);
+				padding-left: size(72);
+				font-size: size(25);
+				line-height: size(32);
 				&::placeholder {
-					font-size: 25px;
-					line-height: 32px;
+					font-size: size(25);
+					line-height: size(32);
 				}
 			}
 			&-label {
 				&::before {
-					left: 24px;
+					left: size(24);
 				}
 			}
 		}
 		&__manage {
-			margin-top: 58px;
+			margin-top: size(58);
 		}
 		&__nav {
-			font-size: 17px;
-			line-height: 30px;
+			font-size: size(17);
+			line-height: size(30);
 			li {
-				margin-right: 50px;
+				margin-right: size(50);
 			}
 			&-list {
 				max-width: 1200px;
 			}
 		}
 		&__user {
-			font-size: 17px;
-			line-height: 30px;
+			font-size: size(17);
+			line-height: size(30);
 		}
 		&__list {
-			margin-top: 50px;
+			margin-top: size(50);
 		}
 		&__application {
-			font-size: 14px;
-			line-height: 25px;
+			font-size: size(14);
+			line-height: size(25);
 			a {
-				min-width: 302px;
-				min-height: 58px;
-				padding: 15px 20px;
+				min-width: size(302);
+				min-height: size(58);
+				padding: size(15) size(20);
 			}
 		}
 		&__realty {
-			margin-top: 75px;
-			font-size: 18px;
-			line-height: 23px;
+			margin-top: size(75);
+			font-size: size(18);
+			line-height: size(23);
 			li {
-				margin-bottom: 30px;
+				margin-bottom: size(30);
 			}
 		}
 		&__text {
-			margin-top: 180px;
-			font-size: 18px;
-			line-height: 23px;
+			margin-top: size(180);
+			font-size: size(18);
+			line-height: size(23);
 		}
 		&__bottom {
-			padding-bottom: 55px;
+			padding-bottom: size(55);
 			display: flex;
 			flex-wrap: wrap;
 			align-items: flex-end;
 			justify-content: space-between;
 		}
 		&__estate {
-			max-width: 1195px;
+			max-width: size(1195);
 			&-wrapper {
 				padding: 0;
 				margin: 0;
 				border: none;
 			}
 			li {
-				margin-right: 30px;
+				margin-right: size(30);
 			}
 		}
 		&__tel {
-			margin-bottom: 8px;
+			margin-bottom: size(8);
 			order: 1;
 			font-weight: 300;
-			font-size: 35px;
-			line-height: 45px;
+			font-size: size(35);
+			line-height: size(45);
 		}
 	}
 }
@@ -485,12 +485,12 @@
 	.menu {
 		&__close {
 			position: absolute;
-			left: 40px;
-			top: 34px;
+			left: size(40);
+			top: size(34);
 		}
 		&__estate {
 			li {
-				margin-right: 40px;
+				margin-right: size(40);
 			}
 		}
 	}

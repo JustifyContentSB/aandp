@@ -1,7 +1,7 @@
 .pagination {
-	margin-top: 30px;
+	margin-top: size(30);
 	&__inner {
-		max-width: 320px;
+		max-width: size(320);
 		margin: 0 auto;
 		display: flex;
 		align-items: flex-start;
@@ -10,9 +10,9 @@
 	&__prev, 
 	&__next {
 		display: inline-flex;
-		min-width: 36px;
-		height: 36px;
-		border: 1px solid #fff;
+		min-width: size(36);
+		height: size(36);
+		border: size(1) solid #fff;
 		position: relative;
 		&::after {
 			content: '';
@@ -20,8 +20,8 @@
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -45%);
-			width: 13px;
-			height: 9px;
+			width: size(13);
+			height: size(9);
 			background-image: url('../../images/icons/pagination-next.svg');
 			background-repeat: no-repeat;
 			background-size: contain;
@@ -36,25 +36,25 @@
 		}
 	}
 	&__list {
-		margin: 0 6px;
+		margin: 0 size(6);
 		display: flex;
 		align-items: center;
 		justify-content: space-between;
 		flex-wrap: wrap;
 		li {
-			margin: 0 3px;
+			margin: 0 size(3);
 			&.pagination__item-hidden {
 				display: none;
 			}
 		}
 		a {
 			display: inline-block;
-			width: 36px;
-			height: 36px;
-			line-height: 36px;
-			border: 1px solid #3A3A3A;
+			width: size(36);
+			height: size(36);
+			line-height: size(36);
+			border: size(1) solid #3A3A3A;
 			text-align: center;
-			font-size: 12px;
+			font-size: size(12);
 			letter-spacing: 0.1rem;
 			transition: $transition;
 			&:hover,
@@ -74,15 +74,15 @@
 @media screen and(min-width: 768px) {
 	.pagination {
 		&__inner {
-			max-width: 616px;
+			max-width: size(616);
 		}
 		&__prev, 
 		&__next {
-			min-width: 50px;
-			height: 50px;
+			min-width: size(50);
+			height: size(50);
 			&::after {
-				width: 17px;
-				height: 12px;
+				width: size(17);
+				height: size(12);
 			}
 		}
 		&__list {
@@ -92,10 +92,10 @@
 				}
 			}
 			a {
-				width: 50px;
-				height: 50px;
-				line-height: 50px;
-				font-size: 16px;
+				width: size(50);
+				height: size(50);
+				line-height: size(50);
+				font-size: size(16);
 			}
 		}
 	}
@@ -103,11 +103,11 @@
 
 @media screen and(min-width: 1280px) {
 	.pagination {
-		margin-top: 40px;
+		margin-top: size(40);
 		&__inner {
 			width: 100%;
-			max-width: 1690px;
-			padding: 0 25px;
+			max-width: size(1690);
+			padding: 0 size(25);
 			margin: 0 auto;
 			align-items: center;
 		}
@@ -121,19 +121,19 @@
 			}
 		}
 		&__prev {
-			padding-left: 32px;
+			padding-left: size(32);
 			&::after {
 				left: 0;
-				top: 5px;
+				top: size(5);
 				transform: none;
 			}
 		}
 		&__next {
-			padding-right: 32px;
+			padding-right: size(32);
 			&::after {
 				left: auto;
 				right: 0;
-				top: 5px;
+				top: size(5);
 				transform: none;
 			}
 		}
@@ -142,6 +142,6 @@
 
 @media screen and(min-width: 1600px) {
 	.pagination {
-		margin-top: 50px;
+		margin-top: size(50);
 	}
 }

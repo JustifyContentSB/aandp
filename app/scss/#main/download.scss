@@ -1,9 +1,9 @@
 .download {
 	opacity: 0;
 	visibility: hidden;
-	width: calc(100% - 20px);
+	width: calc(100% - 1.25rem);
 	max-height: 100vh;
-	padding: 15px;
+	padding: size(15);
 	background: #000;
 	position: fixed;
 	top: 50%;
@@ -28,30 +28,30 @@
 		flex-wrap: wrap;
 	}
 	&__title {
-		width: calc(100% - 30px);
+		width: calc(100% - 1.875rem);
 		font-weight: 300;
-		font-size: 20px;
+		font-size: size(20);
 		line-height: 120%;
 	}
 	&__close {
-		width: 22px;
-		height: 22px;
+		width: size(22);
+		height: size(22);
 		&-text {
 			display: none;
 		}
 		&-icon {
 			display: block;
-			width: 22px;
-			height: 22px;
+			width: size(22);
+			height: size(22);
 			position: relative;
 			&::before,
 			&::after {
 				content: '';
 				position: absolute;
-				top: 10px;
+				top: size(10);
 				left: 0;
 				width: 100%;
-				height: 1px;
+				height: size(1);
 				background: #fff;
 			}
 			&::before {
@@ -63,40 +63,40 @@
 		}
 	}
 	&__text {
-		margin-top: 15px;
+		margin-top: size(15);
 		font-weight: 350;
-		font-size: 12px;
+		font-size: size(12);
 		line-height: 130%;
 		text-align: justify;
 		position: relative;
 		z-index: 5;
 	}
 	&__descr {
-		margin-top: 15px;
+		margin-top: size(15);
 		font-weight: bold;
-		font-size: 20px;
+		font-size: size(20);
 		line-height: 120%;
 	}
 	&__form {
-		margin-top: 20px;
+		margin-top: size(20);
 		&-input {
 			display: block;
 			width: 100%;
-			padding: 13px;
-			margin-bottom: 10px;
+			padding: size(13);
+			margin-bottom: size(10);
 			background: transparent;
 			color: #fff;
-			border: 1px solid #C7C7C7;
+			border: size(1) solid #C7C7C7;
 			font-weight: 300;
-			font-size: 14px;
-			line-height: 18px;
+			font-size: size(14);
+			line-height: size(18);
 		}
 	}
 	&__agree {
-		margin-top: 15px;
+		margin-top: size(15);
 		font-weight: 350;
-		font-size: 10px;
-		line-height: 14px;
+		font-size: size(10);
+		line-height: size(14);
 		cursor: pointer;
 		display: flex;
 		flex-wrap: wrap;
@@ -104,20 +104,20 @@
 		align-items: center;
 		&-checkbox {
 			display: inline-block;
-			min-width: 25px;
-			height: 25px;
-			border: 1px solid #4E4E4E;
+			min-width: size(25);
+			height: size(25);
+			border: size(1) solid #4E4E4E;
 			position: relative;
 			svg {
 				position: absolute;
-				top: 3px;
-				left: 4px;
+				top: size(3);
+				left: size(4);
 				opacity: 0;
 			}
 		}
 		&-text {
 			display: block;
-			width: calc(100% - 41px);
+			width: calc(100% - 2.563rem);
 			a {
 				color: $brown;
 			}
@@ -133,7 +133,7 @@
 		}
 	}
 	.btn {
-		margin-top: 15px;
+		margin-top: size(15);
 		letter-spacing: 0.1rem;
 	}
 	&__img {
@@ -143,24 +143,24 @@
 
 @media screen and(min-width: 768px) {
 	.download {
-		width: calc(100% - 50px);
-		max-width: 808px;
+		width: calc(100% - 3.125rem);
+		max-width: size(808);
 	}
 }
 
 @media screen and(min-width: 991px) {
 	.download {
-		padding: 44px 47px 28px 28px;
+		padding: size(44) size(47) size(28) size(28);
 		overflow: visible;
 		&__top {
 			align-items: center;
 		}
 		&__title {
-			width: calc(100% - 150px);
-			font-size: 36px;
+			width: calc(100% - 9.375rem);
+			font-size: size(36);
 		}
 		&__close {
-			width: 100px;
+			width: size(100);
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
@@ -168,44 +168,44 @@
 				display: inline;
 				text-transform: uppercase;
 				font-weight: 500;
-				font-size: 13px;
-				line-height: 17px;
+				font-size: size(13);
+				line-height: size(17);
 			}
 		}
 		&__inner {
-			max-width: 571px;
+			max-width: size(571);
 		}
 		&__text {
-			font-size: 14px;
-			line-height: 22px;
+			font-size: size(14);
+			line-height: size(22);
 		}
 		&__descr {
-			margin-top: 20px;
-			font-size: 35px;
-			line-height: 45px;
+			margin-top: size(20);
+			font-size: size(35);
+			line-height: size(45);
 		}
 		&__form {
-			max-width: 366px;
+			max-width: size(366);
 			&-input {
-				min-height: 56px;
-				padding: 18px;
-				margin-bottom: 20px;
+				min-height: size(56);
+				padding: size(18);
+				margin-bottom: size(20);
 			}
 		}
 		&__agree {
-			margin-top: 30px;
-			font-size: 14px;
-			line-height: 18px;
+			margin-top: size(30);
+			font-size: size(14);
+			line-height: size(18);
 		}
 		.btn {
 			width: 100%;
-			margin-top: 30px;
+			margin-top: size(30);
 		}
 		&__img {
 			display: block;
 			position: absolute;
-			right: -90px;
-			bottom: -53px;
+			right: size(-90);
+			bottom: size(-53);
 		}
 	}
 }
@@ -213,7 +213,7 @@
 @media screen and(min-width: 1366px) {
 	.download {
 		&__text {
-			margin-top: 100px;
+			margin-top: size(100);
 		}
 	}
 }

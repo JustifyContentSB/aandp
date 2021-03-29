@@ -2,17 +2,17 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	width: 48px;
-	height: 48px;
+	width: size(48);
+	height: size(48);
 	position: fixed;
 	z-index: 50;
-	right: 10px;
-	bottom: 10px;
+	right: size(10);
+	bottom: size(10);
 	border-radius: 50%;
 	background: #000;
-	border: 1px solid #fff;
+	border: size(1) solid #fff;
 	&__modal {
-		padding: 10px;
+		padding: size(10);
 		width: 100%;
 		background: #000;
 		position: fixed;
@@ -25,40 +25,40 @@
 		}
 		&-link {
 			display: block;
-			min-height: 40px;
-			padding: 13px 10px 13px 47px;
-			margin-bottom: 12px;
-			font-size: 12px;
-			line-height: 15px;
+			min-height: size(40);
+			padding: size(13) size(10) size(13) size(47);
+			margin-bottom: size(12);
+			font-size: size(12);
+			line-height: size(15);
 			letter-spacing: 0.1rem;
-			border: 1px solid #000000;
+			border: size(1) solid #000000;
 			position: relative;
 			&:last-child {
 				margin-bottom: 0;
 			}
 		}
 		&-close {
-			width: 55px;
-			height: 43px;
+			width: size(55);
+			height: size(43);
 			background: #000;
 			position: absolute;
 			right: 0;
-			top: -43px;
+			top: size(-43);
 			&::before,
 			&::after {
 				content: '';
 				position: absolute;
-				width: 21px;
-				height: 1px;
+				width: size(21);
+				height: size(1);
 				background: #fff; 
 			}
 			&::before {
 				transform: rotate(45deg);
-				left: 18px;
+				left: size(18);
 			}
 			&::after {
 				transform: rotate(-45deg);
-				left: 18px;
+				left: size(18);
 			}
 		}
 		&-phone {
@@ -68,41 +68,41 @@
 			&::before {
 				content: '';
 				position: absolute;
-				left: 14px;
+				left: size(14);
 				top: 50%;
 				transform: translateY(-50%);
-				width: 23px;
-				height: 23px;
+				width: size(23);
+				height: size(23);
 				background: url('../../images/icons/tel.svg');
 				background-repeat: no-repeat;
 				background-size: contain;
 			}
 		}
 		&-mail {
-			border: 1px solid #fff;
+			border: size(1) solid #fff;
 			&::before {
 				content: '';
 				position: absolute;
-				left: 14px;
+				left: size(14);
 				top: 50%;
 				transform: translateY(-50%);
-				width: 20px;
-				height: 14px;
+				width: size(20);
+				height: size(14);
 				background: url('../../images/icons/mail.svg');
 				background-repeat: no-repeat;
 				background-size: contain;
 			}
 		}
 		&-whatsapp {
-			border: 1px solid #fff;
+			border: size(1) solid #fff;
 			&::before {
 				content: '';
 				position: absolute;
-				left: 14px;
+				left: size(14);
 				top: 50%;
 				transform: translateY(-50%);
-				width: 19px;
-				height: 19px;
+				width: size(19);
+				height: size(19);
 				background: url('../../images/icons/whatsapp.svg');
 				background-repeat: no-repeat;
 				background-size: contain;

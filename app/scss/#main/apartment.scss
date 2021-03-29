@@ -1,12 +1,12 @@
 .apartment {
-	margin-top: 25px;
+	margin-top: size(25);
 	&__swiper {
-		padding-left: 10px;
+		padding-left: size(10);
 	}
 	&__slide {
 		width: 77%;
-		max-width: 480px;
-		max-height: 305px;
+		max-width: size(480);
+		max-height: size(305);
 		height: auto;
 		overflow: hidden;
 		position: relative;
@@ -29,7 +29,7 @@
 			background: rgba(0, 0, 0, 0.4);
 		}
 		&-info {
-			padding: 16px 17px;
+			padding: size(16) size(17);
 			position: absolute;
 			z-index: 10;
 			top: 0;
@@ -37,14 +37,14 @@
 		}
 		&-type {
 			font-weight: bold;
-			font-size: 15px;
-			line-height: 19px;
+			font-size: size(15);
+			line-height: size(19);
 		}
 		&-offer {
-			margin-top: 2px;
+			margin-top: size(2);
 			font-weight: 300;
-			font-size: 12px;
-			line-height: 15px;
+			font-size: size(12);
+			line-height: size(15);
 		}
 		&-img {
 			img {
@@ -57,18 +57,18 @@
 @media screen and(min-width: 768px) {
 	.apartment {
 		&__swiper {
-			padding-left: 15px;
+			padding-left: size(15);
 		}
 		&__slide {
 			&-info {
-				padding: 20px;
+				padding: size(20);
 			}
 			&-type {
-				font-size: 20px;
+				font-size: size(20);
 				line-height: 120%;
 			}
 			&-offer {
-				font-size: 18px;
+				font-size: size(18);
 				line-height: 120%;
 			}
 		}
@@ -79,20 +79,20 @@
 	.apartment {
 		&__swiper {
 			padding-left: 0;
-			height: 538px;
+			height: size(538);
 		}
 		&__slide {
-			width: 424px;
+			width: size(424);
 			&-info {
-				padding: 33px 36px;
+				padding: size(33) size(36);
 			}
 			&-type {
-				font-size: 25px;
-				line-height: 32px;
+				font-size: size(25);
+				line-height: size(32);
 			}
 			&-offer {
-				font-size: 21px;
-				line-height: 27px;
+				font-size: size(21);
+				line-height: size(27);
 			}
 		}
 	}
@@ -101,10 +101,10 @@
 @media screen and(min-width: 1440px) {
 	.apartment {
 		&__swiper {
-			height: 610px;
+			height: size(610);
 		}
 		&__slide {
-			width: 480px;
+			width: size(480);
 		}
 	}
 }
@@ -112,7 +112,7 @@
 @media screen and(min-width: 1921px) {
 	.apartment {
 		&__swiper {
-			padding-left: calc((100% - 1640px) / 2);
+			padding-left: calc((100% - 102.5rem) / 2);
 		}
 	}
 }

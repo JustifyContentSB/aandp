@@ -1,16 +1,16 @@
 .composition {
 	display: none;
 	width: 100%;
-	max-width: 1690px;
-	padding: 0 25px;
+	max-width: size(1690);
+	padding: 0 size(25);
 	margin: 0 auto;
-	margin-top: 100px;
+	margin-top: size(100);
 	&__show {
 		display: inline-block;
-		padding-right: 38px;
+		padding-right: size(38);
 		font-weight: bold;
-		font-size: 16px;
-		line-height: 26px;
+		font-size: size(16);
+		line-height: size(26);
 		letter-spacing: 0.1rem;
 		position: relative;
 		&.active {
@@ -22,18 +22,18 @@
 			content: '';
 			position: absolute;
 			left: 0;
-			right: 38px;
+			right: size(38);
 			bottom: 0;
-			height: 1px;
+			height: size(1);
 			background: #fff;
 		}
 		&::after {
 			content: '';
 			position: absolute;
-			bottom: 4px;
+			bottom: size(4);
 			right: 0;
-			width: 25px;
-			height: 16px;
+			width: size(25);
+			height: size(16);
 			background-repeat: no-repeat;
 			background-size: cover;
 			background-image: url('../../images/icons/pagination-next.svg');
@@ -42,27 +42,27 @@
 		}
 	}
 	&__table {
-		margin-top: 40px;
+		margin-top: size(40);
 		display: none;
 		width: 100%;
 		border-collapse: collapse;
 		&-header {
-			border-bottom: 3px solid #fff;
+			border-bottom: size(3) solid #fff;
 			th {
-				padding: 15px 0;
+				padding: size(15) 0;
 				text-align: left;
 				font-weight: 500;
-				font-size: 15px;
+				font-size: size(15);
 				span {
-					padding-right: 28px;
+					padding-right: size(28);
 					position: relative;
 					&::after {
 						content: '';
 						position: absolute;
 						right: 0;
-						bottom: 3px;
-						width: 5px;
-						height: 12px;
+						bottom: size(3);
+						width: size(5);
+						height: size(12);
 						background-image: url('../../images/icons/arrow-right.svg');
 						background-size: cover;
 						transform: rotate(90deg);
@@ -79,32 +79,32 @@
 				}
 			}
 			p {
-				height: 40px;
-				line-height: 40px;
+				height: size(40);
+				line-height: size(40);
 			}
 			&.composition__table-first {
 				td {
-					padding: 29px 0 17px;
+					padding: size(29) 0 size(17);
 				}
 			}
 		}
 		td {
-			padding: 16px 0;
+			padding: size(16) 0;
 			font-weight: 500;
-			font-size: 15px;
-			line-height: 19px;
-			border-bottom: 1px solid #343434;
+			font-size: size(15);
+			line-height: size(19);
+			border-bottom: size(1) solid #343434;
 			&.composition__table-id {
-				font-size: 18px;
+				font-size: size(18);
 			}
 			&.composition__table-price {
-				width: 200px;
+				width: size(200);
 				font-weight: 700;
-				font-size: 18px;
+				font-size: size(18);
 			}
 		}
 		&-id {
-			width: 150px;
+			width: size(150);
 			span {
 				position: relative;
 				&::after {
@@ -113,25 +113,25 @@
 					left: 0;
 					right: 0;
 					bottom: 0;
-					height: 1px;
+					height: size(1);
 					background: #fff;
 				}
 			}
 		}
 		&-floor {
-			width: 135px;
+			width: size(135);
 		}
 		&-size {
-			width: 200px;
+			width: size(200);
 		}
 		&-bedroom {
-			width: 200px;
+			width: size(200);
 		}
 		&-condition {
-			width: 200px;
+			width: size(200);
 		}
 		&-metre {
-			width: 170px;
+			width: size(170);
 		}
 		&-price {
 			font-weight: bold;
@@ -155,29 +155,29 @@
 		&__table {
 			td {
 				&.composition__table-id {
-					font-size: 21px;
+					font-size: size(21);
 				}
 				&.composition__table-price {
-					font-size: 21px;
+					font-size: size(21);
 				}
 			}
 			&-id {
-				width: 220px;
+				width: size(220);
 			}
 			&-floor {
-				width: 185px;
+				width: size(185);
 			}
 			&-size {
-				width: 300px;
+				width: size(300);
 			}
 			&-bedroom {
-				width: 267px;
+				width: size(267);
 			}
 			&-condition {
-				width: 252px;
+				width: size(252);
 			}
 			&-metre {
-				width: 200px;
+				width: size(200);
 			}
 		}
 	}

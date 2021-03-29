@@ -1,39 +1,39 @@
 .owner {
 	&__form {
-		max-width: 395px;
-		margin-top: 15px;
-		font-size: 12px;
+		max-width: size(395);
+		margin-top: size(15);
+		font-size: size(12);
 		line-height: 120%;
 		&-wrapper {
-			margin-top: 30px;
+			margin-top: size(30);
 			color: #fff;
 		}
 		&-title {
 			font-weight: 300;
-			font-size: 18px;
+			font-size: size(18);
 			line-height: 120%;
 		}
 		&-label {
 			display: block;
 			width: 100%;
-			margin-bottom: 10px;
+			margin-bottom: size(10);
 		}
 		&-type {
 			display: block;
-			margin-bottom: 10px;
-			padding: 12px;
-			padding-right: 30px;
+			margin-bottom: size(10);
+			padding: size(12);
+			padding-right: size(30);
 			width: 100%;
-			border: 1px solid #C7C7C7;
+			border: size(1) solid #C7C7C7;
 			font-weight: 500;
 			position: relative;
 			&::after {
 				content: '';
 				position: absolute;
 				top: 48%;
-				right: 15px;
-				width: 11px;
-				height: 6px;
+				right: size(15);
+				width: size(11);
+				height: size(6);
 				background-image: url('../../images/icons/arrow-down.svg');
 				background-repeat: no-repeat;
 				background-size: contain;
@@ -41,11 +41,11 @@
 		}
 		input, textarea {
 			display: block;
-			padding: 12px;
+			padding: size(12);
 			width: 100%;
 			color: #fff;
 			background-color: transparent;
-			border: 1px solid #C7C7C7;
+			border: size(1) solid #C7C7C7;
 			&::placeholder {
 				color: #fff;
 			}
@@ -55,28 +55,28 @@
 		}
 		&-agree {
 			display: block;
-			margin-top: 15px;
+			margin-top: size(15);
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
 			cursor: pointer;
 			&__checkbox {
 				display: inline-block;
-				min-width: 23px;
-				width: 23px;
-				height: 23px;
-				border: 1px solid #666666;
+				min-width: size(23);
+				width: size(23);
+				height: size(23);
+				border: size(1) solid #666666;
 				position: relative;
 				svg {
 					position: absolute;
-					top: 3px;
-					left: 3px;
+					top: size(3);
+					left: size(3);
 					opacity: 0;
 				}
 			}
 			&__text {
 				color: #585858;
-				width: calc(100% - 38px);
+				width: calc(100% - 2.375rem);
 			}
 			input {
 				display: none;
@@ -90,8 +90,8 @@
 			}
 		}
 		&-btn {
-			margin-top: 15px;
-			padding: 5px;
+			margin-top: size(15);
+			padding: size(5);
 		}
 	}
 }
@@ -99,26 +99,26 @@
 @media screen and(min-width: 768px) {
 	.owner {
 		&__form {
-			margin-top: 25px;
+			margin-top: size(25);
 			&-title {
-				font-size: 22px;
+				font-size: size(22);
 				br {
 					display: none;
 				}
 			}
 			&-type {
-				margin-bottom: 15px;
+				margin-bottom: size(15);
 			}
 			&-label {
-				margin-bottom: 15px;
+				margin-bottom: size(15);
 			}
 			&-agree {
-				margin-top: 20px;
+				margin-top: size(20);
 			}
 			&-btn {
-				margin-top: 20px;
-				padding: 10px;
-				min-width: 250px;
+				margin-top: size(20);
+				padding: size(10);
+				min-width: size(250);
 			}
 		}
 	}
@@ -127,39 +127,39 @@
 @media screen and(min-width: 1280px) {
 	.owner {
 		&__form {
-			margin-top: 30px;
+			margin-top: size(30);
 			&-wrapper {
-				margin-top: 50px;
+				margin-top: size(50);
 			}
 			&-title {
-				font-size: 30px;
+				font-size: size(30);
 			}
 			&-type {
-				min-height: 52px;
-				padding: 18px;
-				padding-right: 30px;
-				margin-bottom: 20px;
-				font-size: 16px;
+				min-height: size(52);
+				padding: size(18);
+				padding-right: size(30);
+				margin-bottom: size(20);
+				font-size: size(16);
 			}
 			&-label {
-				margin-bottom: 20px;
+				margin-bottom: size(20);
 			}
 			input, textarea {
-				min-height: 52px;
-				padding: 16px;
-				font-size: 16px;
+				min-height: size(52);
+				padding: size(16);
+				font-size: size(16);
 			}
 			textarea {
-				margin-top: 30px;
+				margin-top: size(30);
 			}
 			&-agree {
-				margin-top: 30px;
+				margin-top: size(30);
 			}
 			&-btn {
-				font-size: 20px;
-				margin-top: 30px;
-				padding: 15px 10px;
-				min-width: 367px;
+				font-size: size(20);
+				margin-top: size(30);
+				padding: size(15) size(10);
+				min-width: size(367);
 			}
 		}
 	}
@@ -169,26 +169,26 @@
 	.owner {
 		&__form {
 			&-title {
-				font-size: 36px;
+				font-size: size(36);
 			}
 			&-type {
-				font-size: 17px;
-				margin-bottom: 27px;
+				font-size: size(17);
+				margin-bottom: size(27);
 			}
 			&-label {
-				margin-bottom: 27px;
+				margin-bottom: size(27);
 			}
 			input, textarea {
-				font-size: 17px;
+				font-size: size(17);
 			}
 			textarea {
-				margin-top: 30px;
+				margin-top: size(30);
 			}
 			&-agree {
-				margin-top: 30px;
+				margin-top: size(30);
 			}
 			&-btn {
-				margin-top: 30px;
+				margin-top: size(30);
 			}
 		}
 	}

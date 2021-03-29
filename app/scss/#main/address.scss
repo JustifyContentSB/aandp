@@ -5,20 +5,20 @@
 	}
 	&__tel {
 		display: inline-block;
-		font-size: 18px;
+		font-size: size(18);
 		line-height: 120%;
-		margin-bottom: 2px;
+		margin-bottom: size(2);
 		font-weight: 300;
 		letter-spacing: 0.02rem;
 	}
 	&__map {
-		margin: 15px 0 25px;
+		margin: size(15) 0 size(25);
 		width: auto;
-		max-height: 688px;
+		max-height: size(688);
 	}
 	&__contacts {
 		p {
-			margin-bottom: 2px;
+			margin-bottom: size(2);
 		}
 	}
 	&__link {
@@ -33,7 +33,7 @@
 				bottom: 0;
 				left: 0;
 				right: 0;
-				height: 1px;
+				height: size(1);
 				background: #fff;
 			}
 			&[href="mailto:home@aandp.ru"] {
@@ -48,7 +48,7 @@
 						bottom: 0;
 						left: 0;
 						right: 0;
-						height: 1px;
+						height: size(1);
 						background: #fff;
 					}
 				}
@@ -56,23 +56,23 @@
 		}
 	}
 	&__info {
-		margin-top: 15px;
+		margin-top: size(15);
 		color: #CECECE;
 		p {
-			margin-bottom: 2px;
+			margin-bottom: size(2);
 		}
 	}
 	&__btn {
-		padding: 5px;
-		margin-top: 20px;
-		font-size: 13px;
+		padding: size(5);
+		margin-top: size(20);
+		font-size: size(13);
 	}
 }
 
 @media screen and(min-width: 768px) {
 	.address {
 		&__btn {
-			min-width: 250px;
+			min-width: size(250);
 		}
 	}
 }
@@ -80,18 +80,18 @@
 @media screen and(min-width: 1280px) {
 	.address {
 		&__tel {
-			font-size: 26px;
+			font-size: size(26);
 		}
 		&__map {
-			margin: 30px 0;
+			margin: size(30) 0;
 		}
 		&__info {
-			margin-top: 20px;
+			margin-top: size(20);
 		}
 		&__btn {
-			margin-top: 30px;
-			padding: 10px;
-			font-size: 16px;
+			margin-top: size(30);
+			padding: size(10);
+			font-size: size(16);
 		}
 	}
 }
@@ -99,35 +99,35 @@
 @media screen and(min-width: 1440px) {
 	.address {
 		&__header {
-			font-size: 20px;
-			line-height: 26px;
+			font-size: size(20);
+			line-height: size(26);
 		}
 		&__tel {
-			margin-bottom: 6px;
-			font-size: 34px;
-			line-height: 44px;
+			margin-bottom: size(6);
+			font-size: size(34);
+			line-height: size(44);
 		}
 		&__contacts {
 			p {
-				margin-bottom: 9px;
+				margin-bottom: size(9);
 			}
 		}
 		&__link {
-			font-size: 17px;
+			font-size: size(17);
 			line-height: 120%;
 		}
 		&__map {
-			margin: 35px 0 67px;
+			margin: size(35) 0 size(67);
 		}
 		&__info {
-			margin-top: 32px;
+			margin-top: size(32);
 		}
 		&__btn {
-			min-width: 367px;
-			padding: 15px 10px;
-			margin-top: 45px;
-			font-size: 20px;
-			line-height: 26px;
+			min-width: size(367);
+			padding: size(15) size(10);
+			margin-top: size(45);
+			font-size: size(20);
+			line-height: size(26);
 		}
 	}
 }

@@ -1,8 +1,8 @@
 .footer {
-	margin-top: 33px;
+	margin-top: size(33);
 	text-align: center;
 	&__inner {
-		padding: 33px 0 20px;
+		padding: size(33) 0 size(20);
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -11,30 +11,30 @@
 			content: '';
 			position: absolute;
 			top: 0;
-			left: 10px;
-			right: 10px;
-			height: 1px;
+			left: size(10);
+			right: size(10);
+			height: size(1);
 			background: #303030;
 		}
 	}
 	&__logo {
-		width: 201px;
-		height: 65px;
+		width: size(201);
+		height: size(65);
 		img {
 			width: 100%;
 		}
 	}
 	&__list {
-		margin-top: 30px;
+		margin-top: size(30);
 		text-transform: uppercase;
-		font-size: 11px;
-		line-height: 14px;
+		font-size: size(11);
+		line-height: size(14);
 		color: #4E4E4E;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		li {
-			margin-bottom: 9px;
+			margin-bottom: size(9);
 			&:last-child {
 				margin-bottom: 0;
 			}
@@ -48,15 +48,15 @@
 		}
 	}
 	&__address {
-		margin-top: 27px;
+		margin-top: size(27);
 		display: flex;
 		align-items: center;
 		flex-direction: column;
 	}
 	&__tel {
 		font-weight: 400;
-		font-size: 21px;
-		line-height: 27px;
+		font-size: size(21);
+		line-height: size(27);
 		transition: all .3s ease;
 		&:hover,
 		&:focus {
@@ -64,15 +64,15 @@
 		}
 	}
 	&__street {
-		margin-top: 6px;
-		font-size: 10px;
-		line-height: 14px;
+		margin-top: size(6);
+		font-size: size(10);
+		line-height: size(14);
 		letter-spacing: 0.02rem;
 		color: #9A9A9A;
 	}
 	&__copy {
-		margin-top: 28px;
-		font-size: 9.55px;
+		margin-top: size(28);
+		font-size: size(10);
 		line-height: 143%;
 		color: #393939;
 	}
@@ -82,13 +82,13 @@
 	.footer {
 		&__inner {
 			&::before {
-				left: 15px;
-				right: 15px;
+				left: size(15);
+				right: size(15);
 			}
 		}
 		&__logo {
-			width: 329px;
-			height: 106px;
+			width: size(329);
+			height: size(106);
 		}
 		&__street {
 			br {
@@ -105,50 +105,50 @@
 
 @media screen and(min-width: 1280px) {
 	.footer {
-		margin-top: 60px;
+		margin-top: size(60);
 		&__inner {
-			padding: 63px 0 50px;
+			padding: size(63) 0 size(50);
 			&::before {
-				left: 25px;
-				right: 25px;
+				left: size(25);
+				right: size(25);
 			}
 		}
 		&__list {
 			flex-direction: row;
-			font-size: 13px;
-			line-height: 17px;
+			font-size: size(13);
+			line-height: size(17);
 			li {
-				margin-bottom: 20px;
-				margin-right: 47px;
+				margin-bottom: size(20);
+				margin-right: size(47);
 				&:last-child {
-					margin-bottom: 20px;
+					margin-bottom: size(20);
 					margin-right: 0;
 				}
 			}
 		}
 		&__tel {
-			font-size: 25px;
-			line-height: 32px;
+			font-size: size(25);
+			line-height: size(32);
 		}
 		&__street {
-			font-size: 14px;
-			line-height: 18px;
+			font-size: size(14);
+			line-height: size(18);
 		}
 		&__copy {
-			font-size: 14px;
-			line-height: 18px;
+			font-size: size(14);
+			line-height: size(18);
 		}
 	}
 }
 
 @media screen and(min-width: 1920px) {
 	.footer {
-		margin-top: 100px;
+		margin-top: size(100);
 		&__list {
-			margin-top: 50px;
+			margin-top: size(50);
 		}
 		&__copy {
-			margin-top: 42px;
+			margin-top: size(42);
 		}
 	}
 }

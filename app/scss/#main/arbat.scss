@@ -1,35 +1,35 @@
 .arbat {
-	margin-top: 30px;
+	margin-top: size(30);
 	&__title {
-		padding-top: 30px;
+		padding-top: size(30);
 		font-weight: 500;
-		font-size: 16px;
-		line-height: 17px;
-		border-top: 1px solid #303030;
+		font-size: size(16);
+		line-height: size(17);
+		border-top: size(1) solid #303030;
 	}
 	&__inner {
-		margin-top: 24px;
+		margin-top: size(24);
 	}
 	img {
 		width: 100%;
-		max-width: 789px;
+		max-width: size(789);
 	}
 	&__text {
-		margin-top: 14px;
+		margin-top: size(14);
 		font-weight: 350;
-		font-size: 11px;
-		line-height: 14px;
+		font-size: size(11);
+		line-height: size(14);
 	}
 }
 
 @media screen and(min-width: 768px) {
 	.arbat {
 		&__title {
-			    font-size: 20px;
+			    font-size: size(20);
     			line-height: 120%;
 		}
 		&__text {
-			font-size: 14px;
+			font-size: size(14);
 			line-height: 145%;
 		}
 	}
@@ -38,21 +38,21 @@
 @media screen and(min-width: 991px) {
 	.arbat {
 		&__title {
-			    font-size: 24px;
+			    font-size: size(24);
 		}
 	}
 }
 
 @media screen and(min-width: 1280px) {
 	.arbat {
-		margin-top: 60px;
+		margin-top: size(60);
 		&__title {
-			font-size: 28px;
+			font-size: size(28);
 			padding-top: 0;
 			border-top: 0;
 		}
 		&__inner {
-			margin-top: 30px;
+			margin-top: size(30);
 			display: flex;
 			align-items: flex-start;
 			justify-content: space-between;
@@ -60,8 +60,8 @@
 		}
 		&__text {
 			margin-top: 0;
-			width: calc(100% - 819px);
-			font-size: 15px;
+			width: calc(100% - 51.188rem);
+			font-size: size(15);
 		}
 	}
 }
@@ -69,22 +69,22 @@
 @media screen and(min-width: 1366px) {
 	.arbat {
 		&__title {
-			font-size: 40px;
+			font-size: size(40);
 		}
 		&__inner {
-			margin-top: 48px;
+			margin-top: size(48);
 		}
 		&__text {
-			font-size: 16px;
+			font-size: size(16);
 		}
 	}
 }
 
 @media screen and(min-width: 1440px) {
 	.arbat {
-		margin-top: 100px;
+		margin-top: size(100);
 		&__text {
-			font-size: 17px;
+			font-size: size(17);
 		}
 	}
 }
@@ -92,9 +92,9 @@
 @media screen and(min-width: 1600px) {
 	.arbat {
 		&__text {
-			width: calc(100% - 839px);
-			font-size: 18px;
-			line-height: 30px;
+			width: calc(100% - 52.438rem);
+			font-size: size(18);
+			line-height: size(30);
 		}
 	}
 }

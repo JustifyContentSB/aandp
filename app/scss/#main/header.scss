@@ -1,17 +1,17 @@
 .header {
-	min-height: 250px;
+	min-height: size(250);
 	position: relative;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	&-index {
-		height: 1px;
-		min-height: 476px;
+		height: size(1);
+		min-height: size(476);
 		&__top {
-			padding: 24px 20px 26px;
+			padding: size(24) size(20) size(26);
 		}
 		.main-title {
-			margin-top: 32px;
+			margin-top: size(32);
 			br {
 				display: inline;
 			}
@@ -57,7 +57,7 @@
 		content: '';
 		position: absolute;
 		z-index: 0;
-		top: 1px;
+		top: size(1);
 		left: 0;
 		width: 100%;
 		height: 100%;
@@ -75,39 +75,39 @@
 		}
 		&-info {
 			width: 100%;
-			min-height: 275px;
+			min-height: size(275);
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			position: absolute;
 			z-index: 5;
-			bottom: 70px;
+			bottom: size(70);
 		}
 		&-text {
-			max-width: 287px;
+			max-width: size(287);
 			margin: 0 auto;
-			margin-bottom: 10px;
-			margin-top: 40px;
-			padding: 0 10px;
-			font-size: 11px;
-			line-height: 17px;
+			margin-bottom: size(10);
+			margin-top: size(40);
+			padding: 0 size(10);
+			font-size: size(11);
+			line-height: size(17);
 			text-align: center;
 			&__hidden {
 				display: none;
 			}
 		}
 		&-more {
-			min-width: 202px;
+			min-width: size(202);
 			margin-top: auto;
-			padding: 9px;
+			padding: size(9);
 			position: relative;
 			display: inline-block;
 			text-align: center;
-			border: 1px solid #B5A798;
+			border: size(1) solid #B5A798;
 			text-transform: uppercase;
 			font-weight: bold;
-			font-size: 11px;
-			line-height: 19px;
+			font-size: size(11);
+			line-height: size(19);
 			transition: $transition;
 			span {
 				display: none;
@@ -120,9 +120,9 @@
 		}
 		&-btns {
 			position: relative;
-			bottom: 30px;
-			width: 90px;
-			height: 20px;
+			bottom: size(30);
+			width: size(90);
+			height: size(20);
 			margin: 0 auto;
 			display: flex;
 			align-items: center;
@@ -132,13 +132,13 @@
 				&-button {
 					&-prev {
 						position: static;
-						width: 30px;
-						height: 20px;
+						width: size(30);
+						height: size(20);
 						&::after {
 							content: '';
 							position: absolute;
-							width: 30px;
-							height: 20px;
+							width: size(30);
+							height: size(20);
 							background-image: url('../../images/icons/swiper-prev.svg');
 							background-size: cover;
 							background-repeat: no-repeat;
@@ -147,13 +147,13 @@
 					}
 					&-next {
 						position: static;
-						width: 30px;
-						height: 20px;
+						width: size(30);
+						height: size(20);
 						&::after {
 							content: '';
 							position: absolute;
-							width: 30px;
-							height: 20px;
+							width: size(30);
+							height: size(20);
 							background-image: url('../../images/icons/swiper-prev.svg');
 							background-size: cover;
 							background-repeat: no-repeat;
@@ -175,7 +175,7 @@
 					content: '';
 					position: absolute;
 					z-index: 0;
-					top: 1px;
+					top: size(1);
 					left: 0;
 					width: 100%;
 					height: 100%;
@@ -191,8 +191,8 @@
 		height: 100%;
 	}
 	&__top {
-		min-height: 113px;
-		padding: 24px 20px 17px;
+		min-height: size(113);
+		padding: size(24) size(20) size(17);
 		display: flex;
 		align-items: flex-start;
 		justify-content: space-between;
@@ -202,9 +202,9 @@
 			content: '';
 			position: absolute;
 			bottom: 0;
-			left: 10px;
-			right: 10px;
-			height: 1px;
+			left: size(10);
+			right: size(10);
+			height: size(1);
 			background: rgba(255, 255, 255, 0.3);
 		}
 		&-left {
@@ -213,16 +213,16 @@
 		}
 		&-rate {
 			&.rate {
-				margin-left: 30px;
+				margin-left: size(30);
 				display: none;
 			}
 		}
 	}
 	&__logo {
-		width: 201px;
-		height: 65px;
+		width: size(201);
+		height: size(65);
 		position: absolute;
-		top: 27px;
+		top: size(27);
 		left: 50%;
 		transform: translateX(-50%);
 		img {
@@ -231,37 +231,37 @@
 	}
 	&__toggle {
 		display: inline-block;
-		height: 17px;
+		height: size(17);
 		&-btn {
 			display: inline-block;
-			width: 22px;
-			height: 17px;
+			width: size(22);
+			height: size(17);
 			position: relative;
 			&::after {
 				content: '';
 				position: absolute;
 				width: 100%;
-				height: 1px;
+				height: size(1);
 				top: 0;
 				left: 0;
 				background: #FFFFFF;
-				border-radius: 3px;
-				box-shadow: 0 8px #fff, 0 16px #fff;
+				border-radius: size(3);
+				box-shadow: 0 size(8) #fff, 0 size(16) #fff;
 			}
 		}
 		&-menu {
 			display: none;
 			font-weight: 500;
-			font-size: 13px;
-			line-height: 17px;
+			font-size: size(13);
+			line-height: size(17);
 		}
 	}
 	&__tel {
 		margin-left: auto;
 		display: none;
 		font-weight: 500;
-		font-size: 18px;
-		line-height: 23px;
+		font-size: size(18);
+		line-height: size(23);
 		transition: all .3s ease;
 		&:hover,
 		&:focus {
@@ -271,8 +271,8 @@
 	&__search {
 		&-btn {
 			display: inline-block;
-			width: 20px;
-			height: 20px;
+			width: size(20);
+			height: size(20);
 		}
 	}
 	&__bottom {
@@ -280,15 +280,15 @@
 		z-index: 5;
 		&-realty {
 			display: none;
-			margin-top: 27px;
+			margin-top: size(27);
 			justify-content: center;
 			text-transform: uppercase;
 			font-weight: 500;
-			font-size: 13px;
-			line-height: 17px;
+			font-size: size(13);
+			line-height: size(17);
 			li {
-				margin-right: 47px;
-				margin-bottom: 20px;
+				margin-right: size(47);
+				margin-bottom: size(20);
 				&:last-child {
 					margin-right: 0;
 				}
@@ -301,7 +301,7 @@
 					bottom: 0;
 					right: 0;
 					width: 0;
-					height: 1px;
+					height: size(1);
 					background: #fff;
 					transition: all .3s ease;
 				}
@@ -320,12 +320,12 @@
 
 @media screen and(min-width: 768px) {
 	.header {
-		min-height: 280px;
+		min-height: size(280);
 		&-index {
-			min-height: 550px;
+			min-height: size(550);
 		}
 		&-cardjk {
-			min-height: 310px;
+			min-height: size(310);
 			.main-title {
 				br {
 					display: inline;
@@ -336,14 +336,14 @@
 			&-rate {
 				&.rate {
 					display: flex;
-					margin-left: 30px;
+					margin-left: size(30);
 				}
 			}
 		}
 		&__swiper {
 			&-text {
-				max-width: 640px;
-				font-size: 14px;
+				max-width: size(640);
+				font-size: size(14);
 				line-height: 130%;
 			}
 		}
@@ -352,21 +352,21 @@
 
 @media screen and(min-width: 1280px) {
 	.header {
-		min-height: 350px;
+		min-height: size(350);
 		&-index {
-			min-height: 800px;
+			min-height: size(800);
 		}
 		&-cardobj {
 			.breadcrumbs {
-				margin-top: 10px;
+				margin-top: size(10);
 			}
 		}
 		&__top {
-			padding: 25px;
-			min-height: 160px;
+			padding: size(25);
+			min-height: size(160);
 			&-rate {
 				&.rate {
-					margin-left: 44px;
+					margin-left: size(44);
 				}
 			}
 		}
@@ -375,13 +375,13 @@
 			align-items: center;
 			&-menu {
 				display: block;
-				margin-left: 16px;
+				margin-left: size(16);
 			}
 		}
 		&__logo {
 			margin-top: 0;
-			width: 329px;
-			height: 106px;
+			width: size(329);
+			height: size(106);
 		}
 		&__bottom {
 			&-realty {
@@ -396,40 +396,40 @@
 		}
 		&__swiper {
 			&-text {
-				font-size: 16px;
-				line-height: 25px;
+				font-size: size(16);
+				line-height: size(25);
 				&__hidden {
 					display: inline;
 				}
 			}
 			&-more {
-				margin-top: 43px;
-				min-width: 262px;
-				padding: 14px;
-				font-size: 12px;
+				margin-top: size(43);
+				min-width: size(262);
+				padding: size(14);
+				font-size: size(12);
 				span {
 					display: inline;
 				}
 			}
 			&-btns {
-				width: 120px;
-				height: 27px;
+				width: size(120);
+				height: size(27);
 				.swiper {
 					&-button {
 						&-prev {
-							width: 40px;
-							height: 27px;
+							width: size(40);
+							height: size(27);
 							&::after {
-								width: 40px;
-								height: 27px;
+								width: size(40);
+								height: size(27);
 							}
 						}
 						&-next {
-							width: 40px;
-							height: 27px;
+							width: size(40);
+							height: size(27);
 							&::after {
-								width: 40px;
-								height: 27px;
+								width: size(40);
+								height: size(27);
 							}
 						}
 					}
@@ -441,34 +441,34 @@
 
 @media screen and(min-width: 1440px) {
 	.header {
-		min-height: 417px;
+		min-height: size(417);
 		&-index {
-			min-height: 900px;
+			min-height: size(900);
 			.main-title {
-				font-size: 83px;
-				line-height: 100px;
+				font-size: size(83);
+				line-height: size(100);
 			}
 		}
 		&-cardjk {
 			.main-title {
-				margin-top: 28px;
-				line-height: 72px;
+				margin-top: size(28);
+				line-height: size(72);
 			}
 			.breadcrumbs {
 				position: relative;
-				bottom: -6px;
+				bottom: size(-6);
 			}
 		}
 		&__top {
-			padding: 31px 38px;
+			padding: size(31) size(38);
 		}
 		&__swiper {
 			&-info {
-				bottom: 150px;
+				bottom: size(150);
 			}
 			&-text {
-				max-width: 920px;
-				margin-top: 15px;	
+				max-width: size(920);
+				margin-top: size(15);	
 			}
 		}
 	}
@@ -478,7 +478,7 @@
 	.header {
 		&__top {
 			&::after {
-				width: 1640px;
+				width: size(1640);
 				right: auto;
 				left: 50%;
 				transform: translateX(-50%);

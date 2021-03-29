@@ -1,13 +1,13 @@
 .plan {
-	margin-top: 33px;
+	margin-top: size(33);
 	font-weight: 300;
-	font-size: 13px;
-	line-height: 17px;
+	font-size: size(13);
+	line-height: size(17);
 	letter-spacing: 0.1rem;
 	p {
-		margin-bottom: 5px;
+		margin-bottom: size(5);
 		&.plan__size {
-			margin-bottom: 25px;
+			margin-bottom: size(25);
 		}
 	}
 	a {
@@ -19,19 +19,19 @@
 		}
 	}
 	&__img {
-		max-width: 693px;
+		max-width: size(693);
 		img {
 			width: 100%;
 		}
 	}
 	&__btn {
-		margin-bottom: 14px;
-		padding: 11px;
+		margin-bottom: size(14);
+		padding: size(11);
 		font-weight: 500;
-		font-size: 14px;
-		line-height: 18px;
+		font-size: size(14);
+		line-height: size(18);
 		letter-spacing: 0.1rem;
-		border: 1px solid #fff;
+		border: size(1) solid #fff;
 		transition: $transition;
 		&:hover,
 		&:focus {
@@ -40,16 +40,16 @@
 		}
 	}
 	&__info {
-		margin-top: 20px;
+		margin-top: size(20);
 	}
 	&__order {
-		padding: 7px;
+		padding: size(7);
 	}
 	&__present {
-		margin-top: 14px;
+		margin-top: size(14);
 		font-weight: 350;
-		font-size: 15px;
-		line-height: 40px;
+		font-size: size(15);
+		line-height: size(40);
 		letter-spacing: 0.1rem;
 		color: #B6B6B6;
 		&:hover,
@@ -69,7 +69,7 @@
 				left: 0;
 				right: 0;
 				bottom: 0;
-				height: 1px;
+				height: size(1);
 				background: #B6B6B6;
 			}
 		}
@@ -83,29 +83,29 @@
 				display: none;
 			}
 			&.plan__present {
-				margin-top: 25px;
+				margin-top: size(25);
 				text-align: center;
 			}
 		}
 		&__left {
-			width: calc(100% - 384px);
+			width: calc(100% - 24rem);
 		}
 		&__info {
-			max-width: 354px;
+			max-width: size(354);
 		}
 		&__size {
-			margin-top: 10px;
-			font-size: 15px;
-			line-height: 19px;
+			margin-top: size(10);
+			font-size: size(15);
+			line-height: size(19);
 		}
 		&__btn {
-			margin-bottom: 25px;
-			padding: 13px;
-			font-size: 16px;
-			line-height: 21px;
+			margin-bottom: size(25);
+			padding: size(13);
+			font-size: size(16);
+			line-height: size(21);
 		}
 		&__order {
-			padding: 11px;
+			padding: size(11);
 		}
 	}
 }
@@ -124,6 +124,6 @@
 
 @media screen and(min-width: 1280px) {
 	.plan {
-		margin-top: 55px;
+		margin-top: size(55);
 	}
 }

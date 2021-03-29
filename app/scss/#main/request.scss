@@ -1,9 +1,9 @@
 .request {
-	width: calc(100% - 20px);
+	width: calc(100% - 1.25rem);
 	opacity: 0;
 	visibility: hidden;
 	max-height: 100vh;
-	padding: 25px;
+	padding: size(25);
 	background: #000;
 	position: fixed;
 	top: 50%;
@@ -22,7 +22,7 @@
 		visibility: visible;
 	}
 	&__top {
-		margin-bottom: 28px;
+		margin-bottom: size(28);
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
@@ -30,8 +30,8 @@
 	}
 	&__title {
 		font-weight: 300;
-		font-size: 36px;
-		line-height: 36px;
+		font-size: size(36);
+		line-height: size(36);
 		span {
 			display: none;
 		}
@@ -40,17 +40,17 @@
 		display: flex;
 		align-items: center;
 		&-icon {
-			width: 22px;
-			height: 22px;
+			width: size(22);
+			height: size(22);
 			position: relative;
 			&::before,
 			&::after {
 				content: '';
 				position: absolute;
-				top: 10px;
+				top: size(10);
 				left: 0;
 				width: 100%;
-				height: 1px;
+				height: size(1);
 				background: #fff;
 			}
 			&::before {
@@ -62,25 +62,25 @@
 		}
 		&-text {
 			display: none;
-			margin-left: 18px;
+			margin-left: size(18);
 			font-weight: 500;
-			font-size: 13px;
-			line-height: 17px;
+			font-size: size(13);
+			line-height: size(17);
 			text-transform: uppercase;
 		}
 	}
 	&__input {
 		display: block;
 		width: 100%;
-		height: 56px;
-		margin-bottom: 20px;
-		padding: 18px;
+		height: size(56);
+		margin-bottom: size(20);
+		padding: size(18);
 		font-weight: 300;
-		font-size: 14px;
-		line-height: 18px;
+		font-size: size(14);
+		line-height: size(18);
 		letter-spacing: 0.1rem;
 		background-color: transparent;
-		border: 1px solid #fff;
+		border: size(1) solid #fff;
 		color: #fff;
 		&::placeholder {
 			color: #A4A4A4;
@@ -89,24 +89,24 @@
 	&__textarea {
 		display: block;
 		width: 100%;
-		height: 220px;
-		padding: 18px;
+		height: size(220);
+		padding: size(18);
 		font-weight: 300;
-		font-size: 14px;
-		line-height: 18px;
+		font-size: size(14);
+		line-height: size(18);
 		letter-spacing: 0.1rem;
 		background-color: transparent;
-		border: 1px solid #fff;
+		border: size(1) solid #fff;
 		color: #fff;
 		&::placeholder {
 			color: #A4A4A4;
 		}
 	}
 	&__agree {
-		margin-top: 28px;
+		margin-top: size(28);
 		font-weight: 350;
-		font-size: 10px;
-		line-height: 14px;
+		font-size: size(10);
+		line-height: size(14);
 		cursor: pointer;
 		display: flex;
 		flex-wrap: wrap;
@@ -114,20 +114,20 @@
 		align-items: center;
 		&-checkbox {
 			display: inline-block;
-			min-width: 25px;
-			height: 25px;
-			border: 1px solid #4E4E4E;
+			min-width: size(25);
+			height: size(25);
+			border: size(1) solid #4E4E4E;
 			position: relative;
 			svg {
 				position: absolute;
-				top: 3px;
-				left: 4px;
+				top: size(3);
+				left: size(4);
 				opacity: 0;
 			}
 		}
 		&-text {
 			display: block;
-			width: calc(100% - 41px);
+			width: calc(100% - 2.563rem);
 			a {
 				color: $brown;
 			}
@@ -144,7 +144,7 @@
 	}
 	.btn {
 		width: 100%;
-		margin-top: 28px;
+		margin-top: size(28);
 		letter-spacing: 0.1rem;
 	}
 	&__map {
@@ -152,7 +152,7 @@
 		position: relative;
 	}
 	&__item {
-		width: 451px;
+		width: size(451);
 		height: 100%;
 		background-image: url('../../images/request/request-1.jpg');
 		background-repeat: no-repeat;
@@ -168,7 +168,7 @@
 			background: linear-gradient(163.61deg, #000000 1.3%, rgba(0, 0, 0, 0) 88.63%);
 		}
 		&-top {
-			padding: 40px;
+			padding: size(40);
 			position: relative;
 			z-index: 5;
 			a {
@@ -176,24 +176,24 @@
 			}
 		}
 		&-title {
-			max-width: 309px;
+			max-width: size(309);
 			text-transform: uppercase;
 			font-weight: 350;
-			font-size: 21.0496px;
-			line-height: 23px;
+			font-size: size(21);
+			line-height: size(23);
 		}
 		&-address {
-			margin-top: 8px;
-			font-size: 12px;
-			line-height: 15px;
+			margin-top: size(8);
+			font-size: size(12);
+			line-height: size(15);
 			color: rgba(255, 255, 255, 0.9);
 			opacity: 0.7;
 		}
 		&-bottom {
 			width: 100%;
-			padding: 33px 40px;
+			padding: size(33) size(40);
 			background: rgba(0, 0, 0, 0.5);
-			backdrop-filter: blur(5px);
+			backdrop-filter: blur(size(5));
 			position: absolute;
 			z-index: 5;
 			bottom: 0;
@@ -201,20 +201,20 @@
 		}
 		&-size {
 			font-weight: 400;
-			font-size: 13px;
-			line-height: 14px;
+			font-size: size(13);
+			line-height: size(14);
 		}
 		&-price {
-			margin-top: 5px;
+			margin-top: size(5);
 			font-weight: bold;
-			font-size: 23px;
+			font-size: size(23);
 		}
 	}
 }
 
 @media screen and(min-width: 768px) {
 	.request {
-		width: calc(100% - 50px);
+		width: calc(100% - 3.125rem);
 		&__title {
 			span {
 				display: inline;
@@ -230,18 +230,18 @@
 
 @media screen and(min-width: 1366px) {
 	.request {
-		width: 1255px;
+		width: size(1255);
 		&__inner {
 			display: flex;
 			justify-content: space-between;
 		}
 		&__form {
-			width: 368px;
-			min-width: 368px;
+			width: size(368);
+			min-width: size(368);
 		}
 		&__map {
 			display: block;
-			width: calc(100% - 390px);
+			width: calc(100% - 24.375rem);
 			background-image: url('../../images/map/map.jpg');
 			background-repeat: no-repeat;
 			background-size: cover;
